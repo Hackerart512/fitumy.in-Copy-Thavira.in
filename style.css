@@ -2043,7 +2043,10 @@ img {
   }
 
   .section-padding {
-    padding: 40px 0;
+    padding: 30px 0px
+  }
+  .symptoms-section{
+    padding-bottom: 0px;
   }
 
   .nav-actions {
@@ -2583,10 +2586,11 @@ img {
 
 .problem-col-light h4,
 .answer-col-light h4 {
-  font-size: 20px;
-  font-weight: 800;
-  color: #1e293b;
-  margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 14px 0px;
+    text-align: center;
 }
 
 .problem-col-light p,
@@ -2594,6 +2598,7 @@ img {
   font-size: 15px;
   color: #475569;
   line-height: 1.6;
+  text-align: center;
 }
 
 .solution-divider-light {
@@ -2602,15 +2607,29 @@ img {
 }
 
 .badge-warning-light {
-  background: #fef2f2;
-  color: #dc2626;
-  border: 1px solid #fecaca;
+     background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    border-radius: 100px;
+    font-size: 12px;
+    width: max-content;
+    display: block;
+    margin: auto;
+    padding: 1px 15px;
 }
 
 .badge-success-light {
   background: #dcfce7;
   color: #15803d;
   border: 1px solid #bbf7d0;
+
+     
+    border-radius: 100px;
+    font-size: 12px;
+    width: max-content;
+    display: block;
+    margin: auto;
+    padding: 1px 15px;
 }
 
 .btn-chain-cta-light {
@@ -2691,12 +2710,15 @@ img {
   .solution-divider-light {
     width: 100%;
     height: 1px;
+            margin: 18px 0px;
   }
 
   .btn-chain-cta-light {
-    width: 100%;
-    font-size: 16px;
-    padding: 16px 18px;
+            width: 100%;
+        font-size: 12px;
+        padding: 16px 18px;
+        border-radius: 100px;
+        margin: 16px 0px;
   }
 
   .chain-micro-trust-light {
@@ -2717,19 +2739,23 @@ img {
   border-bottom: 1px solid var(--color-border);
 }
 
+.treatment-header{
+      margin-bottom: 0px;
+}
+
 .reality-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--color-amber-light);
-  border: 1px solid var(--color-amber-border);
-  color: #b45309;
-  padding: 8px 18px;
-  border-radius: var(--radius-full);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 16px;
+     display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-amber-light);
+    border: 1px solid var(--color-amber-border);
+    color: #b45309;
+    padding: 3px 18px;
+    border-radius: var(--radius-full);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
 }
 
 .text-forest {
@@ -2803,7 +2829,7 @@ img {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 0px;
   padding-bottom: 14px;
   border-bottom: 1px solid #f1f5f9;
 }
