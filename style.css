@@ -926,7 +926,7 @@ img {
 }
 
 .hero-subheadline {
-  font-size: clamp(16px, 2.5vw, 19px);
+  font-size: clamp(14px, 2.5vw, 19px);
   color: var(--color-slate);
   margin-bottom: 32px;
   line-height: 1.6;
