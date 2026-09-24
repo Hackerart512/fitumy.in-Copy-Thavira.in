@@ -9,7 +9,8 @@
     content="Stop guessing why your gut issues keep coming back. Book a private 1:1 Gut Clarity Call for ₹199 and get a personalized 45-day next-step plan from an AYUSH-certified doctor." />
 
   <!-- Hero section video -->
-  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/iet9ycnkvc.js" async type="module"></script>
 
   <!-- Preload LCP image — eliminates render-blocking image discovery delay -->
   <link rel="preload" href="images/Thavira_lp_banner.webp" as="image" fetchpriority="high" />
@@ -142,11 +143,11 @@
       z-index: 1;
     }
 
-    .wistia_embed {
+    /* .wistia_embed {
       margin-bottom: 23px;
       width: 100%;
       height: 400px;
-    }
+    } */
 
     /* Border animation */
     @keyframes goldBorder {
@@ -186,11 +187,11 @@
       text-align: center;
     }
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
       .wistia_embed {
         height: 184px;
       }
-    }
+    } */
   </style>
 </head>
 
@@ -245,10 +246,9 @@
         </p>
 
 
-        <div class="wistia_embed wistia_async_iet9ycnkvc">
+        <wistia-player media-id="iet9ycnkvc" autoplay style="margin-bottom: 23px;">
           <img src="/images/thumbnail_hero.webp" alt="Video thumbnail" style="width:100%; height:100%; display:block;">
-        </div>
-
+        </wistia-player>
 
         <div class="hero-cta-wrapper">
           <a href="https://pay1-1.fitumy.in/" class="btn btn-primary btn-hero pulse-glow smooth-scroll">
