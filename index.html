@@ -1,56 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Thavira Gut Clarity Call - Doctor-Led 1:1 Consultation</title>
-    <meta
-      name="description"
-      content="Stop guessing why your gut issues keep coming back. Book a private 1:1 Gut Clarity Call for ₹199 and get a personalized 45-day next-step plan from an AYUSH-certified doctor."
-    />
 
-    <!-- Preload LCP image — eliminates render-blocking image discovery delay -->
-    <link
-      rel="preload"
-      href="images/Thavira_lp_banner.webp"
-      as="image"
-      fetchpriority="high"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Thavira Gut Clarity Call - Doctor-Led 1:1 Consultation</title>
+  <meta name="description"
+    content="Stop guessing why your gut issues keep coming back. Book a private 1:1 Gut Clarity Call for ₹199 and get a personalized 45-day next-step plan from an AYUSH-certified doctor." />
 
-    <!-- Main stylesheet (critical — kept blocking for layout stability) -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Hero section video -->
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 
-    <!-- Google Fonts — preconnect + non-blocking load (removes ~750 ms render block) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preload LCP image — eliminates render-blocking image discovery delay -->
+  <link rel="preload" href="images/Thavira_lp_banner.webp" as="image" fetchpriority="high" />
+
+  <!-- Main stylesheet (critical — kept blocking for layout stability) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts — preconnect + non-blocking load (removes ~750 ms render block) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" media="print" onload="this.media = 'all'" />
+  <noscript>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media = 'all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
+      rel="stylesheet" />
+  </noscript>
 
-    <!-- FontAwesome Icons — non-blocking (removes ~1,500 ms render block + 18 KB unused CSS) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- FontAwesome Icons — non-blocking (removes ~1,500 ms render block + 18 KB unused CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -65,1970 +52,1627 @@
       src="https://www.facebook.com/tr?id=1072765442043336&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PWNDMP7F");
-    </script>
-    <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PWNDMP7F");
+  </script>
+  <!-- End Google Tag Manager -->
 
-    <style>
-      #diverVictoryBtn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        border-radius: 50px;
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.4;
+  <style>
+    #diverVictoryBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
 
-        /* Red button */
-        background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
+      /* Red button */
+      background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
 
-        /* Gold border */
-        border: 2px solid #d6a23a;
+      /* Gold border */
+      border: 2px solid #d6a23a;
 
-        /* Glow */
-        box-shadow:
-          0 0 8px rgba(214, 162, 58, 0.5),
-          0 5px 18px rgba(0, 0, 0, 0.25);
+      /* Glow */
+      box-shadow:
+        0 0 8px rgba(214, 162, 58, 0.5),
+        0 5px 18px rgba(0, 0, 0, 0.25);
 
-        transition: all 0.3s ease;
-      }
+      transition: all 0.3s ease;
+    }
 
-      /* Hindi text */
-      #diverVictoryBtn span {
-        position: relative;
-        z-index: 3;
-        width: 100%;
-        text-align: center;
-      }
+    /* Hindi text */
+    #diverVictoryBtn span {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      text-align: center;
+    }
 
-      /* Animated gold border */
-      #diverVictoryBtn::after {
-        content: "";
-        position: absolute;
+    /* Animated gold border */
+    #diverVictoryBtn::after {
+      content: "";
+      position: absolute;
 
-        width: 180%;
-        height: 180%;
+      width: 180%;
+      height: 180%;
 
-        top: -40%;
-        left: -40%;
+      top: -40%;
+      left: -40%;
 
-        background: conic-gradient(
-          transparent,
+      background: conic-gradient(transparent,
           transparent,
           #fff2a8,
           #d6a23a,
           #fff2a8,
           transparent,
-          transparent
-        );
+          transparent);
 
-        animation: goldBorder 3s linear infinite;
+      animation: goldBorder 3s linear infinite;
 
-        z-index: 0;
+      z-index: 0;
+    }
+
+    /* Inner red layer */
+    #diverVictoryBtn::before {
+      content: "";
+      position: absolute;
+
+      inset: 2px;
+      border-radius: 48px;
+
+      background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
+
+      z-index: 1;
+    }
+
+    .wistia_embed {
+      margin-bottom: 23px;
+      width: 100%;
+      height: 400px;
+    }
+
+    /* Border animation */
+    @keyframes goldBorder {
+      0% {
+        transform: rotate(0deg);
       }
 
-      /* Inner red layer */
-      #diverVictoryBtn::before {
-        content: "";
-        position: absolute;
-
-        inset: 2px;
-        border-radius: 48px;
-
-        background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
-
-        z-index: 1;
+      100% {
+        transform: rotate(360deg);
       }
+    }
 
-      /* Border animation */
-      @keyframes goldBorder {
-        0% {
-          transform: rotate(0deg);
-        }
+    /* Hover */
+    #diverVictoryBtn:hover {
+      transform: translateY(-3px) scale(1.04);
 
-        100% {
-          transform: rotate(360deg);
-        }
+      box-shadow:
+        0 0 10px rgba(214, 162, 58, 0.9),
+        0 0 25px rgba(214, 162, 58, 0.7),
+        0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Hover background */
+    #diverVictoryBtn:hover::before {
+      background: linear-gradient(135deg, #a92323, #d08a25, #a92323);
+    }
+
+    /* Click */
+    #diverVictoryBtn:active {
+      transform: scale(0.97);
+    }
+
+    #diverVictoryBtn span {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .wistia_embed {
+        height: 184px;
       }
+    }
+  </style>
+</head>
 
-      /* Hover */
-      #diverVictoryBtn:hover {
-        transform: translateY(-3px) scale(1.04);
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWNDMP7F" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-        box-shadow:
-          0 0 10px rgba(214, 162, 58, 0.9),
-          0 0 25px rgba(214, 162, 58, 0.7),
-          0 8px 25px rgba(0, 0, 0, 0.3);
-      }
+  <!-- SECTION 00 — Qualifier Bar -->
+  <div class="qualifier-bar">
+    <div class="container qualifier-container">
+      <div class="live-dot"></div>
+      <p class="qualifier-text">
+        Bloated, Acidity, Or Constipated with No Clear Reason ?
+      </p>
+    </div>
+  </div>
 
-      /* Hover background */
-      #diverVictoryBtn:hover::before {
-        background: linear-gradient(135deg, #a92323, #d08a25, #a92323);
-      }
-
-      /* Click */
-      #diverVictoryBtn:active {
-        transform: scale(0.97);
-      }
-
-      #diverVictoryBtn span {
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    text-align: center;
-}
-    </style>
-  </head>
-
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PWNDMP7F"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- SECTION 00 — Qualifier Bar -->
-    <div class="qualifier-bar">
-      <div class="container qualifier-container">
-        <div class="live-dot"></div>
-        <p class="qualifier-text">
-          Bloated, Acidity, Or Constipated with No Clear Reason ?
-        </p>
+  <!-- SECTION 01 — Navigation -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="container nav-container">
+      <div class="logo-area">
+        <div class="logo-flex">
+          <img src="images/8.png" alt="Thavira" width="100" height="50" loading="eager" />
+        </div>
+        <span class="nav-micro-label">Personalised 1:1 Gut Clarity Consultation</span>
+      </div>
+      <div class="nav-actions">
+        <a href="https://pay1-1.fitumy.in/" class="btn btn-nav smooth-scroll">Book ₹199 Call</a>
       </div>
     </div>
+  </nav>
 
-    <!-- SECTION 01 — Navigation -->
-    <nav class="main-nav" aria-label="Main navigation">
-      <div class="container nav-container">
-        <div class="logo-area">
-          <div class="logo-flex">
-            <img
-              src="images/8.png"
-              alt="Thavira"
-              width="100"
-              height="50"
-              loading="eager"
-            />
-          </div>
-          <span class="nav-micro-label"
-            >Personalised 1:1 Gut Clarity Consultation</span
-          >
+  <!-- SECTION 02 — Hero / Above The Fold -->
+  <header class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          Get Permanent Relief From Chronic Gut Issues Like H Pylori, GERD,
+          SIBO, IBS In 6 Months
+
+          <span class="highlight">
+            Connect With A Gut Health Expert In 1:1 Gut Clarity Call
+          </span>
+        </h1>
+
+        <p class="hero-subheadline">
+          Our Experts Use The Exact System That's Helped 5000+ People Heal
+          Naturally, Mapping The Root Cause And Past Patterns Behind Your
+          Condition For Complete Relief
+        </p>
+
+
+        <div class="wistia_embed wistia_async_iet9ycnkvc">
+          <img src="/images/thumbnail_hero.webp" alt="Video thumbnail" style="width:100%; height:100%; display:block;">
         </div>
-        <div class="nav-actions">
-          <a href="https://pay1-1.fitumy.in/" class="btn btn-nav smooth-scroll"
-            >Book ₹199 Call</a
-          >
+
+
+        <div class="hero-cta-wrapper">
+          <a href="https://pay1-1.fitumy.in/" class="btn btn-primary btn-hero pulse-glow smooth-scroll">
+            Book My Gut Clarity Call — ₹199
+          </a>
+          <div class="cta-microcopy">
+            <span><i class="fa-solid fa-lock" aria-hidden="true"></i> Secure
+              payment</span>
+            <span>•</span>
+            <span><i class="fa-brands fa-whatsapp text-whatsapp" aria-hidden="true"></i>
+              WhatsApp confirmation</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+              Online consultation</span>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- SECTION 02 — Hero / Above The Fold -->
-    <header class="hero-section">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <h1 class="hero-headline">
-            Get Permanent Relief From Chronic Gut Issues Like H Pylori, GERD,
-            SIBO, IBS In 6 Months
+      <div class="hero-visual">
+        <!-- Official Call Pass Card (Mobile First Premium Pass) -->
+        <div class="call-card-v2">
+          <div class="call-card-v2-header">
+            <div class="pass-title-group">
+              <span class="pass-tag">OFFICIAL BOOKING PASS</span>
+              <h3>1:1 Gut Clarity Call</h3>
+            </div>
+            <div class="price-badge-pill">
+              <span class="price-old">₹999</span>
+              <span class="price-current">₹199</span>
+            </div>
+          </div>
 
-            <span class="highlight">
-              Connect With A Gut Health Expert In 1:1 Gut Clarity Call
-            </span>
-          </h1>
+          <div class="call-card-v2-body">
+            <div class="pass-detail-item">
+              <div class="detail-icon">
+                <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">CALL TYPE</span>
+                <span class="detail-value">1:1 Private Doctor Session</span>
+              </div>
+            </div>
 
-          <p class="hero-subheadline">
-            Our Experts Use The Exact System That's Helped 5000+ People Heal
-            Naturally, Mapping The Root Cause And Past Patterns Behind Your
-            Condition For Complete Relief
-          </p>
+            <div class="pass-detail-item">
+              <div class="detail-icon">
+                <i class="fa-solid fa-video" aria-hidden="true"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">MODE</span>
+                <span class="detail-value">Online Video / Audio Call</span>
+              </div>
+            </div>
 
-          <img
-            style="border-radius: 10px; margin-bottom: 22px"
-            src="images/Thavira_lp_banner.webp"
-            alt="Thavira Gut Clarity Call – doctor-led 1:1 consultation for chronic gut issues"
-            width="620"
-            height="414"
-            fetchpriority="high"
-            loading="eager"
-          />
+            <div class="pass-detail-item">
+              <div class="detail-icon">
+                <i class="fa-brands fa-whatsapp text-success" aria-hidden="true"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">AFTER PAYMENT</span>
+                <span class="detail-value">Instant WhatsApp slot choice &amp; team confirmation</span>
+              </div>
+            </div>
 
-          <div class="hero-cta-wrapper">
-            <a
-              href="https://pay1-1.fitumy.in/"
-              class="btn btn-primary btn-hero pulse-glow smooth-scroll"
-            >
-              Book My Gut Clarity Call — ₹199
-            </a>
-            <div class="cta-microcopy">
-              <span
-                ><i class="fa-solid fa-lock" aria-hidden="true"></i> Secure
-                payment</span
-              >
-              <span>•</span>
-              <span
-                ><i
-                  class="fa-brands fa-whatsapp text-whatsapp"
-                  aria-hidden="true"
-                ></i>
-                WhatsApp confirmation</span
-              >
-              <span>•</span>
-              <span
-                ><i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
-                Online consultation</span
-              >
+            <div class="pass-detail-item">
+              <div class="detail-icon">
+                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">DELIVERABLES</span>
+                <span class="detail-value">Root Cause Map + 45-Day Action Plan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="call-card-v2-footer">
+            <div class="trust-chip">
+              <i class="fa-solid fa-circle-check text-success" aria-hidden="true"></i>
+              Private 1:1 Call
+            </div>
+            <div class="trust-chip">
+              <i class="fa-solid fa-circle-check text-success" aria-hidden="true"></i>
+              Root Cause Map
+            </div>
+            <div class="trust-chip">
+              <i class="fa-solid fa-circle-check text-success" aria-hidden="true"></i>
+              Certified Doctor
             </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <!-- Official Call Pass Card (Mobile First Premium Pass) -->
-          <div class="call-card-v2">
-            <div class="call-card-v2-header">
-              <div class="pass-title-group">
-                <span class="pass-tag">OFFICIAL BOOKING PASS</span>
-                <h3>1:1 Gut Clarity Call</h3>
-              </div>
-              <div class="price-badge-pill">
-                <span class="price-old">₹999</span>
-                <span class="price-current">₹199</span>
-              </div>
-            </div>
+        <!-- Trust Section - Green Theme -->
+        <section class="trust-section" aria-label="Trust indicators">
+          <div class="trust-card">
+            <div class="trust-badge">✓ Trusted by 5,000+ Members</div>
 
-            <div class="call-card-v2-body">
-              <div class="pass-detail-item">
-                <div class="detail-icon">
-                  <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
-                </div>
-                <div class="detail-text">
-                  <span class="detail-label">CALL TYPE</span>
-                  <span class="detail-value">1:1 Private Doctor Session</span>
-                </div>
-              </div>
+            <h3 class="trust-title">
+              Join 5,000+ people who found permanent relief with
+              <span>Thavira</span>
+            </h3>
 
-              <div class="pass-detail-item">
-                <div class="detail-icon">
-                  <i class="fa-solid fa-video" aria-hidden="true"></i>
-                </div>
-                <div class="detail-text">
-                  <span class="detail-label">MODE</span>
-                  <span class="detail-value">Online Video / Audio Call</span>
-                </div>
-              </div>
+            <p class="trust-text">
+              Successfully supporting people struggling with
+              <strong>Acidity, IBS, GERD, SIBO,</strong> and
+              <strong>Bloating</strong> through a sustainable, root-cause
+              approach.
+            </p>
 
-              <div class="pass-detail-item">
-                <div class="detail-icon">
-                  <i
-                    class="fa-brands fa-whatsapp text-success"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <div class="detail-text">
-                  <span class="detail-label">AFTER PAYMENT</span>
-                  <span class="detail-value"
-                    >Instant WhatsApp slot choice &amp; team confirmation</span
-                  >
-                </div>
-              </div>
-
-              <div class="pass-detail-item">
-                <div class="detail-icon">
-                  <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                </div>
-                <div class="detail-text">
-                  <span class="detail-label">DELIVERABLES</span>
-                  <span class="detail-value"
-                    >Root Cause Map + 45-Day Action Plan</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="call-card-v2-footer">
-              <div class="trust-chip">
-                <i
-                  class="fa-solid fa-circle-check text-success"
-                  aria-hidden="true"
-                ></i>
-                Private 1:1 Call
-              </div>
-              <div class="trust-chip">
-                <i
-                  class="fa-solid fa-circle-check text-success"
-                  aria-hidden="true"
-                ></i>
-                Root Cause Map
-              </div>
-              <div class="trust-chip">
-                <i
-                  class="fa-solid fa-circle-check text-success"
-                  aria-hidden="true"
-                ></i>
-                Certified Doctor
-              </div>
+            <div class="trust-tags">
+              <span>Acidity</span>
+              <span>IBS</span>
+              <span>GERD</span>
+              <span>SIBO</span>
+              <span>Bloating</span>
             </div>
           </div>
+        </section>
 
-          <!-- Trust Section - Green Theme -->
-          <section class="trust-section" aria-label="Trust indicators">
-            <div class="trust-card">
-              <div class="trust-badge">✓ Trusted by 5,000+ Members</div>
+        <style>
+          .trust-section {
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+          }
 
-              <h3 class="trust-title">
-                Join 5,000+ people who found permanent relief with
-                <span>Thavira</span>
-              </h3>
+          .trust-card {
+            max-width: 850px;
+            width: 100%;
+            background: linear-gradient(135deg, #ffffff, #f0fff4);
+            border: 1px solid #000000;
+            border-radius: 24px;
+            padding: 32px;
+            text-align: center;
+          }
 
-              <p class="trust-text">
-                Successfully supporting people struggling with
-                <strong>Acidity, IBS, GERD, SIBO,</strong> and
-                <strong>Bloating</strong> through a sustainable, root-cause
-                approach.
-              </p>
+          .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+          }
 
-              <div class="trust-tags">
-                <span>Acidity</span>
-                <span>IBS</span>
-                <span>GERD</span>
-                <span>SIBO</span>
-                <span>Bloating</span>
-              </div>
-            </div>
-          </section>
+          .trust-title {
+            font-size: 32px;
+            line-height: 1.25;
+            font-weight: 800;
+            color: #14532d;
+            margin: 0 0 14px;
+          }
 
-          <style>
-            .trust-section {
-              padding-top: 40px;
-              display: flex;
-              justify-content: center;
-            }
+          .trust-title span {
+            color: #16a34a;
+          }
 
+          .trust-text {
+            font-size: 17px;
+            color: #4b5563;
+            max-width: 650px;
+            margin: 0 auto 24px;
+            line-height: 1.7;
+          }
+
+          .trust-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+          }
+
+          .trust-tags span {
+            background: #ecfdf3;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+            padding: 4px 15px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+          }
+
+          @media (max-width: 768px) {
             .trust-card {
-              max-width: 850px;
-              width: 100%;
-              background: linear-gradient(135deg, #ffffff, #f0fff4);
-              border: 1px solid #000000;
-              border-radius: 24px;
-              padding: 32px;
-              text-align: center;
-            }
-
-            .trust-badge {
-              display: inline-flex;
-              align-items: center;
-              gap: 8px;
-              background: #dcfce7;
-              color: #15803d;
-              font-weight: 700;
-              font-size: 14px;
-              padding: 10px 18px;
-              border-radius: 999px;
-              margin-bottom: 18px;
+              padding: 25px 15px;
             }
 
             .trust-title {
-              font-size: 32px;
-              line-height: 1.25;
-              font-weight: 800;
-              color: #14532d;
-              margin: 0 0 14px;
-            }
-
-            .trust-title span {
-              color: #16a34a;
+              font-size: 18px;
             }
 
             .trust-text {
-              font-size: 17px;
-              color: #4b5563;
-              max-width: 650px;
-              margin: 0 auto 24px;
-              line-height: 1.7;
+              font-size: 13px;
             }
-
-            .trust-tags {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              gap: 12px;
-            }
-
-            .trust-tags span {
-              background: #ecfdf3;
-              color: #166534;
-              border: 1px solid #bbf7d0;
-              padding: 4px 15px;
-              border-radius: 999px;
-              font-size: 12px;
-              font-weight: 600;
-            }
-
-            @media (max-width: 768px) {
-              .trust-card {
-                padding: 25px 15px;
-              }
-
-              .trust-title {
-                font-size: 18px;
-              }
-
-              .trust-text {
-                font-size: 13px;
-              }
-            }
-          </style>
-        </div>
+          }
+        </style>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- SECTION 04.5 — The 5-Step Gut Chain Reaction (Light Theme Event Flow) -->
-    <section class="chain-reaction-section section-padding bg-light-chain">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="chain-badge-wrapper">
-            <span class="chain-badge-light">
-              <i class="fa-solid fa-link-slash" aria-hidden="true"></i> THE
-              5-STAGE GUT DOMINO EFFECT
-            </span>
-          </div>
-          <h2 class="section-title chain-title-light">
-            It's Not 5 Separate Gut Issues. <br />
-            <span class="text-mint-highlight">It's One Chain Reaction.</span>
-          </h2>
-          <p class="section-subheadline text-muted-dark">
-            H.Pylori or chronic stress imbalances your stomach acid. Imbalanced
-            acid levels cause bacteria to overgrow. Overgrowth damages your gut
-            lining. A damaged lining is why the same symptoms keep circling
-            back, no matter what you take.
-          </p>
+  <!-- SECTION 04.5 — The 5-Step Gut Chain Reaction (Light Theme Event Flow) -->
+  <section class="chain-reaction-section section-padding bg-light-chain">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="chain-badge-wrapper">
+          <span class="chain-badge-light">
+            <i class="fa-solid fa-link-slash" aria-hidden="true"></i> THE
+            5-STAGE GUT DOMINO EFFECT
+          </span>
         </div>
+        <h2 class="section-title chain-title-light">
+          It's Not 5 Separate Gut Issues. <br />
+          <span class="text-mint-highlight">It's One Chain Reaction.</span>
+        </h2>
+        <p class="section-subheadline text-muted-dark">
+          H.Pylori or chronic stress imbalances your stomach acid. Imbalanced
+          acid levels cause bacteria to overgrow. Overgrowth damages your gut
+          lining. A damaged lining is why the same symptoms keep circling
+          back, no matter what you take.
+        </p>
+      </div>
 
-        <!-- 5-Stage Visual Domino Flowchart -->
-        <div class="chain-flow-wrapper">
-          <div class="chain-flow-grid five-steps-grid">
-            <!-- Step 1 -->
-            <div class="chain-card light-card step-1">
-              <div class="chain-card-img-wrap">
-                <img
-                  src="images/step1_stress_pylori.jpg"
-                  alt="H. Pylori or Chronic Stress initial trigger"
-                  loading="lazy"
-                />
-                <span class="stage-pill-light pill-red">STEP 01</span>
-              </div>
-              <div class="chain-card-content">
-                <h3 class="chain-card-title-light">
-                  H. Pylori / Chronic Stress
-                </h3>
-                <p class="chain-card-desc-light">
-                  Initial infection or ongoing stress weakens stomach acid
-                  secretion &amp; digestive defense.
-                </p>
-                <div class="chain-card-footer-light">
-                  <span class="tag-label-light"
-                    ><i class="fa-solid fa-bolt" aria-hidden="true"></i> Primary
-                    Trigger</span
-                  >
-                </div>
-              </div>
+      <!-- 5-Stage Visual Domino Flowchart -->
+      <div class="chain-flow-wrapper">
+        <div class="chain-flow-grid five-steps-grid">
+          <!-- Step 1 -->
+          <div class="chain-card light-card step-1">
+            <div class="chain-card-img-wrap">
+              <img src="images/step1_stress_pylori.jpg" alt="H. Pylori or Chronic Stress initial trigger"
+                loading="lazy" />
+              <span class="stage-pill-light pill-red">STEP 01</span>
             </div>
-
-            <!-- Step Arrow 1 -->
-            <div class="chain-connector-light" aria-hidden="true">
-              <div class="arrow-circle">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="chain-card light-card step-2">
-              <div class="chain-card-img-wrap">
-                <img
-                  src="images/step2_acid_imbalance.jpg"
-                  alt="Imbalanced stomach acid level"
-                  loading="lazy"
-                />
-                <span class="stage-pill-light pill-amber">STEP 02</span>
-              </div>
-              <div class="chain-card-content">
-                <h3 class="chain-card-title-light">Imbalanced Acid Level</h3>
-                <p class="chain-card-desc-light">
-                  Stomach acid drops below the threshold needed to kill bad
-                  bacteria and digest food.
-                </p>
-                <div class="chain-card-footer-light">
-                  <span class="tag-label-light"
-                    ><i class="fa-solid fa-flask" aria-hidden="true"></i> Acid
-                    Dysfunction</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Step Arrow 2 -->
-            <div class="chain-connector-light" aria-hidden="true">
-              <div class="arrow-circle">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="chain-card light-card step-3">
-              <div class="chain-card-img-wrap">
-                <img
-                  src="images/step3_sibo_dysbiosis.jpg"
-                  alt="SIBO and Dysbiosis bacterial overgrowth"
-                  loading="lazy"
-                />
-                <span class="stage-pill-light pill-orange">STEP 03</span>
-              </div>
-              <div class="chain-card-content">
-                <h3 class="chain-card-title-light">SIBO / Dysbiosis</h3>
-                <p class="chain-card-desc-light">
-                  Bacteria colonize the small intestine, overgrowing and
-                  fermenting meals into uncomfortable gas.
-                </p>
-                <div class="chain-card-footer-light">
-                  <span class="tag-label-light"
-                    ><i class="fa-solid fa-bacteria" aria-hidden="true"></i>
-                    Bacterial Shift</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Step Arrow 3 -->
-            <div class="chain-connector-light" aria-hidden="true">
-              <div class="arrow-circle">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="chain-card light-card step-4">
-              <div class="chain-card-img-wrap">
-                <img
-                  src="images/step4_leaky_gut.jpg"
-                  alt="Leaky gut lining damaged barrier"
-                  loading="lazy"
-                />
-                <span class="stage-pill-light pill-rose">STEP 04</span>
-              </div>
-              <div class="chain-card-content">
-                <h3 class="chain-card-title-light">Leaky Gut</h3>
-                <p class="chain-card-desc-light">
-                  Overgrowth toxins wear down mucosal cell junctions, creating
-                  intestinal permeability.
-                </p>
-                <div class="chain-card-footer-light">
-                  <span class="tag-label-light"
-                    ><i class="fa-solid fa-shield-virus" aria-hidden="true"></i>
-                    Lining Damage</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Step Arrow 4 -->
-            <div class="chain-connector-light" aria-hidden="true">
-              <div class="arrow-circle">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <!-- Step 5 -->
-            <div class="chain-card light-card step-5">
-              <div class="chain-card-img-wrap">
-                <img
-                  src="images/step5_gut_brain_anxiety.jpg"
-                  alt="Severe gut issues and anxiety symptoms"
-                  loading="lazy"
-                />
-                <span class="stage-pill-light pill-green">STEP 05</span>
-              </div>
-              <div class="chain-card-content">
-                <h3 class="chain-card-title-light">
-                  Severe Gut Issues / Anxiety
-                </h3>
-                <p class="chain-card-desc-light">
-                  Leaked particles trigger systemic inflammation, food fear,
-                  reflux &amp; gut-brain anxiety.
-                </p>
-                <div class="chain-card-footer-light">
-                  <span class="tag-label-light"
-                    ><i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
-                    Circling Symptoms</span
-                  >
-                </div>
+            <div class="chain-card-content">
+              <h3 class="chain-card-title-light">
+                H. Pylori / Chronic Stress
+              </h3>
+              <p class="chain-card-desc-light">
+                Initial infection or ongoing stress weakens stomach acid
+                secretion &amp; digestive defense.
+              </p>
+              <div class="chain-card-footer-light">
+                <span class="tag-label-light"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Primary
+                  Trigger</span>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Critical Insight Banner (Light Theme) -->
-        <div class="chain-solution-box-light">
-          <div class="solution-grid">
-            <div class="solution-col problem-col-light text-center">
-              <div class="sol-badge badge-warning-light">
-                Why Most Treatments Fail
-              </div>
-              <h4>Most treatment targets only 1 point on this chain</h4>
-              <p>
-                Taking antacids for acidity, or antibiotics for bacteria.
-                Leaving the rest of the 5-step chain active means the same
-                symptoms keep circling back, no matter what you take.
-              </p>
-            </div>
-            <div class="solution-divider-light"></div>
-            <div class="solution-col answer-col-light">
-              <div class="sol-badge badge-success-light">
-                The Thavira Solution
-              </div>
-              <h4>This 1:1 Call maps the whole 5-step chain</h4>
-              <p>
-                We map your exact position on this 5-step domino line, giving
-                you a clear doctor-led roadmap on what to fix first.
-              </p>
+          <!-- Step Arrow 1 -->
+          <div class="chain-connector-light" aria-hidden="true">
+            <div class="arrow-circle">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
             </div>
           </div>
 
-          <div class="chain-cta-wrapper text-center">
-            <a
-              href="https://pay1-1.fitumy.in/"
-              class="btn btn-secondary pulse-glow smooth-scroll btn-chain-cta-light"
-            >
-              Map My 5-Step Gut Chain — Book ₹199 Call
-            </a>
-            <div class="chain-micro-trust-light">
-              <span
-                ><i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
-                Doctor-Led 1:1 Call</span
-              >
-              <span>•</span>
-              <span
-                ><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
-                45-Day Custom Action Plan</span
-              >
-              <span>•</span>
-              <span
-                ><i class="fa-solid fa-bolt" aria-hidden="true"></i> Instant
-                WhatsApp Confirmation</span
-              >
+          <!-- Step 2 -->
+          <div class="chain-card light-card step-2">
+            <div class="chain-card-img-wrap">
+              <img src="images/step2_acid_imbalance.jpg" alt="Imbalanced stomach acid level" loading="lazy" />
+              <span class="stage-pill-light pill-amber">STEP 02</span>
+            </div>
+            <div class="chain-card-content">
+              <h3 class="chain-card-title-light">Imbalanced Acid Level</h3>
+              <p class="chain-card-desc-light">
+                Stomach acid drops below the threshold needed to kill bad
+                bacteria and digest food.
+              </p>
+              <div class="chain-card-footer-light">
+                <span class="tag-label-light"><i class="fa-solid fa-flask" aria-hidden="true"></i> Acid
+                  Dysfunction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Arrow 2 -->
+          <div class="chain-connector-light" aria-hidden="true">
+            <div class="arrow-circle">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="chain-card light-card step-3">
+            <div class="chain-card-img-wrap">
+              <img src="images/step3_sibo_dysbiosis.jpg" alt="SIBO and Dysbiosis bacterial overgrowth" loading="lazy" />
+              <span class="stage-pill-light pill-orange">STEP 03</span>
+            </div>
+            <div class="chain-card-content">
+              <h3 class="chain-card-title-light">SIBO / Dysbiosis</h3>
+              <p class="chain-card-desc-light">
+                Bacteria colonize the small intestine, overgrowing and
+                fermenting meals into uncomfortable gas.
+              </p>
+              <div class="chain-card-footer-light">
+                <span class="tag-label-light"><i class="fa-solid fa-bacteria" aria-hidden="true"></i>
+                  Bacterial Shift</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Arrow 3 -->
+          <div class="chain-connector-light" aria-hidden="true">
+            <div class="arrow-circle">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="chain-card light-card step-4">
+            <div class="chain-card-img-wrap">
+              <img src="images/step4_leaky_gut.jpg" alt="Leaky gut lining damaged barrier" loading="lazy" />
+              <span class="stage-pill-light pill-rose">STEP 04</span>
+            </div>
+            <div class="chain-card-content">
+              <h3 class="chain-card-title-light">Leaky Gut</h3>
+              <p class="chain-card-desc-light">
+                Overgrowth toxins wear down mucosal cell junctions, creating
+                intestinal permeability.
+              </p>
+              <div class="chain-card-footer-light">
+                <span class="tag-label-light"><i class="fa-solid fa-shield-virus" aria-hidden="true"></i>
+                  Lining Damage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Arrow 4 -->
+          <div class="chain-connector-light" aria-hidden="true">
+            <div class="arrow-circle">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="chain-card light-card step-5">
+            <div class="chain-card-img-wrap">
+              <img src="images/step5_gut_brain_anxiety.jpg" alt="Severe gut issues and anxiety symptoms"
+                loading="lazy" />
+              <span class="stage-pill-light pill-green">STEP 05</span>
+            </div>
+            <div class="chain-card-content">
+              <h3 class="chain-card-title-light">
+                Severe Gut Issues / Anxiety
+              </h3>
+              <p class="chain-card-desc-light">
+                Leaked particles trigger systemic inflammation, food fear,
+                reflux &amp; gut-brain anxiety.
+              </p>
+              <div class="chain-card-footer-light">
+                <span class="tag-label-light"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                  Circling Symptoms</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-testimonials">
-      <div class="container">
-        <div class="heading">
-          <h2>
-            5,000+ People With IBS, GERD, H. Pylori & Chronic Bloating
-            <span>Finally Found Permanent Relief</span>
-          </h2>
-          <div class="divider"></div>
+      <!-- Critical Insight Banner (Light Theme) -->
+      <div class="chain-solution-box-light">
+        <div class="solution-grid">
+          <div class="solution-col problem-col-light text-center">
+            <div class="sol-badge badge-warning-light">
+              Why Most Treatments Fail
+            </div>
+            <h4>Most treatment targets only 1 point on this chain</h4>
+            <p>
+              Taking antacids for acidity, or antibiotics for bacteria.
+              Leaving the rest of the 5-step chain active means the same
+              symptoms keep circling back, no matter what you take.
+            </p>
+          </div>
+          <div class="solution-divider-light"></div>
+          <div class="solution-col answer-col-light">
+            <div class="sol-badge badge-success-light">
+              The Thavira Solution
+            </div>
+            <h4>This 1:1 Call maps the whole 5-step chain</h4>
+            <p>
+              We map your exact position on this 5-step domino line, giving
+              you a clear doctor-led roadmap on what to fix first.
+            </p>
+          </div>
         </div>
 
-        <div class="testimonial-slider">
-          <!-- Video Card 1 — Vimeo facade: iframe injected only on click (~1,200 ms JS saved) -->
-          <div class="video-card">
-            <div class="vimeo-wrapper">
-              <iframe
-                src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                title="Testimonial 1"
-              >
-              </iframe>
-            </div>
+        <div class="chain-cta-wrapper text-center">
+          <a href="https://pay1-1.fitumy.in/" class="btn btn-secondary pulse-glow smooth-scroll btn-chain-cta-light">
+            Map My 5-Step Gut Chain — Book ₹199 Call
+          </a>
+          <div class="chain-micro-trust-light">
+            <span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+              Doctor-Led 1:1 Call</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              45-Day Custom Action Plan</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> Instant
+              WhatsApp Confirmation</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Video Card 2 -->
-          <div class="video-card">
-            <div class="vimeo-wrapper">
-              <iframe
-                src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                title="Testimonial 2"
-              >
-              </iframe>
-            </div>
+  <section class="section-testimonials">
+    <div class="container">
+      <div class="heading">
+        <h2>
+          5,000+ People With IBS, GERD, H. Pylori & Chronic Bloating
+          <span>Finally Found Permanent Relief</span>
+        </h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testimonial-slider">
+        <!-- Video Card 1 — Vimeo facade: iframe injected only on click (~1,200 ms JS saved) -->
+        <div class="video-card">
+          <div class="vimeo-wrapper">
+            <iframe src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 1">
+            </iframe>
           </div>
+        </div>
 
-          <!-- Video Card 3 -->
-          <div class="video-card">
-            <div class="vimeo-wrapper">
-              <iframe
-                src="https://fast.wistia.com/embed/iframe/5ye7xc403x"
-                title="Aditya Testimonial - H.pylori"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                frameborder="0"
-                scrolling="no"
-                style="
+        <!-- Video Card 2 -->
+        <div class="video-card">
+          <div class="vimeo-wrapper">
+            <iframe src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 2">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card">
+          <div class="vimeo-wrapper">
+            <iframe src="https://fast.wistia.com/embed/iframe/5ye7xc403x" title="Aditya Testimonial - H.pylori"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" scrolling="no" style="
                   width: 100%;
                   aspect-ratio: 9/16;
                   border: 0;
                   border-radius: 12px;
-                "
-              >
-              </iframe>
-            </div>
+                ">
+            </iframe>
           </div>
-        </div>
-
-        <div class="bridge-line text-center">
-          <a id="diverVictoryBtn"
-            href="https://pay1-1.fitumy.in/"
-            class="btn btn-secondary smooth-scroll"
-            > <span>
-              
-              Get Personalised Gut Clarity — ₹199
-            </span>
-            </a
-          >
         </div>
       </div>
-    </section>
 
-    <!-- SECTION 04.6 — Treatment Reality Matrix (Before You Spend Another Rupee) -->
-    <section class="reality-section section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="reality-badge">
-            <i class="fa-solid fa-receipt" aria-hidden="true"></i> REALITY CHECK
+      <div class="bridge-line text-center">
+        <a id="diverVictoryBtn" href="https://pay1-1.fitumy.in/" class="btn btn-secondary smooth-scroll"> <span>
+
+            Get Personalised Gut Clarity — ₹199
           </span>
-          <h2 class="section-title text-forest">
-            Before You Spend Another Rupee Chasing Relief
-          </h2>
-          <p class="section-subheadline text-slate">
-            Most patients booking this call have already spent
-            <strong>₹20,000 to ₹70,000+</strong> on doctors, tests, medicines,
-            and treatments that gave temporary relief at best.
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04.6 — Treatment Reality Matrix (Before You Spend Another Rupee) -->
+  <section class="reality-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="reality-badge">
+          <i class="fa-solid fa-receipt" aria-hidden="true"></i> REALITY CHECK
+        </span>
+        <h2 class="section-title text-forest">
+          Before You Spend Another Rupee Chasing Relief
+        </h2>
+        <p class="section-subheadline text-slate">
+          Most patients booking this call have already spent
+          <strong>₹20,000 to ₹70,000+</strong> on doctors, tests, medicines,
+          and treatments that gave temporary relief at best.
+        </p>
+      </div>
+
+      <!-- Money Saved Highlight Banner -->
+      <div class="reality-value-banner">
+        <div class="value-text">
+          <span class="highlight-chip">₹199 Clarity Call</span> isn't another
+          purchase in that same cycle. It's the one thing that actually tells
+          you what's happening in your gut, before you spend more money
+          guessing.
+        </div>
+      </div>
+
+      <h3 class="reality-subtitle text-center">
+        Here's Why Most of What You've Already Tried Didn't Fix It:
+      </h3>
+
+      <!-- Mobile-First Visual Comparison Cards Matrix -->
+      <div class="treatment-grid">
+        <!-- Item 1: Antacids / PPIs -->
+        <div class="treatment-card">
+          <div class="treatment-header">
+            <div class="treatment-icon icon-ppi">
+              <i class="fa-solid fa-pills" aria-hidden="true"></i>
+            </div>
+            <div class="treatment-title-wrap">
+              <span class="treatment-label">WHAT YOU'VE TRIED #1</span>
+              <h4>Antacids / PPIs</h4>
+            </div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-does">
+              <span class="meta-tag tag-does"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                What It Actually Does</span>
+              <p>Reduces stomach acid temporarily</p>
+            </div>
+            <div class="treatment-misses">
+              <span class="meta-tag tag-misses"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                What It Misses</span>
+              <p>
+                Doesn't heal gut lining; can worsen low stomach acid
+                (hypoacidity) long-term.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Antibiotics -->
+        <div class="treatment-card">
+          <div class="treatment-header">
+            <div class="treatment-icon icon-antibiotic">
+              <i class="fa-solid fa-vial-virus" aria-hidden="true"></i>
+            </div>
+            <div class="treatment-title-wrap">
+              <span class="treatment-label">WHAT YOU'VE TRIED #2</span>
+              <h4>Antibiotics (H. Pylori Course)</h4>
+            </div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-does">
+              <span class="meta-tag tag-does"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                What It Actually Does</span>
+              <p>Clears the active infection</p>
+            </div>
+            <div class="treatment-misses">
+              <span class="meta-tag tag-misses"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                What It Misses</span>
+              <p>
+                Doesn't repair the gut lining damage the infection or
+                antibiotics caused.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Probiotics -->
+        <div class="treatment-card">
+          <div class="treatment-header">
+            <div class="treatment-icon icon-probiotic">
+              <i class="fa-solid fa-prescription-bottle-medical" aria-hidden="true"></i>
+            </div>
+            <div class="treatment-title-wrap">
+              <span class="treatment-label">WHAT YOU'VE TRIED #3</span>
+              <h4>Probiotics</h4>
+            </div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-does">
+              <span class="meta-tag tag-does"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                What It Actually Does</span>
+              <p>Adds good bacteria</p>
+            </div>
+            <div class="treatment-misses">
+              <span class="meta-tag tag-misses"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                What It Misses</span>
+              <p>
+                Doesn't fix the damaged environment those bacteria need to
+                survive in.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Generic Diet Charts -->
+        <div class="treatment-card">
+          <div class="treatment-header">
+            <div class="treatment-icon icon-diet">
+              <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+            </div>
+            <div class="treatment-title-wrap">
+              <span class="treatment-label">WHAT YOU'VE TRIED #4</span>
+              <h4>Generic Diet Charts</h4>
+            </div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-does">
+              <span class="meta-tag tag-does"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                What It Actually Does</span>
+              <p>Removes trigger foods</p>
+            </div>
+            <div class="treatment-misses">
+              <span class="meta-tag tag-misses"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                What It Misses</span>
+              <p>
+                Doesn't address low acid, SIBO, or gut lining repair
+                underneath.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Ayurveda / Home Remedies -->
+        <div class="treatment-card">
+          <div class="treatment-header">
+            <div class="treatment-icon icon-ayurveda">
+              <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+            </div>
+            <div class="treatment-title-wrap">
+              <span class="treatment-label">WHAT YOU'VE TRIED #5</span>
+              <h4>Ayurveda &amp; Home Remedies</h4>
+            </div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-does">
+              <span class="meta-tag tag-does"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                What It Actually Does</span>
+              <p>Manages symptoms temporarily</p>
+            </div>
+            <div class="treatment-misses">
+              <span class="meta-tag tag-misses"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                What It Misses</span>
+              <p>
+                Rarely identifies the specific case (SIBO vs IBS vs Bile
+                Reflux, etc.).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Thavira Way Difference Box -->
+      <div class="thavira-difference-box">
+        <div class="diff-content">
+          <span class="diff-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> THE
+            THAVIRA WAY</span>
+          <h4>The Thavira way starts differently</h4>
+          <p>
+            We map your specific pattern first, then treat the actual cause —
+            not the closest matching symptom.
           </p>
         </div>
+        <a href="https://pay1-1.fitumy.in/" class="btn btn-secondary pulse-glow smooth-scroll btn-reality-cta">
+          Stop Guessing — Book ₹199 Call
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Money Saved Highlight Banner -->
-        <div class="reality-value-banner">
-          <div class="value-text">
-            <span class="highlight-chip">₹199 Clarity Call</span> isn't another
-            purchase in that same cycle. It's the one thing that actually tells
-            you what's happening in your gut, before you spend more money
-            guessing.
-          </div>
-        </div>
+  <!-- SECTION 05 — The Thavira Root-Cause Clarity Method -->
+  <section class="method-section section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">The Thavira Method</span>
+        <h2 class="section-title">
+          The 3-Step Gut Clarity Map. An Expert-Led Way to Understand What
+          Your Gut Actually Needs Next.
+        </h2>
+      </div>
 
-        <h3 class="reality-subtitle text-center">
-          Here's Why Most of What You've Already Tried Didn't Fix It:
-        </h3>
-
-        <!-- Mobile-First Visual Comparison Cards Matrix -->
-        <div class="treatment-grid">
-          <!-- Item 1: Antacids / PPIs -->
-          <div class="treatment-card">
-            <div class="treatment-header">
-              <div class="treatment-icon icon-ppi">
-                <i class="fa-solid fa-pills" aria-hidden="true"></i>
-              </div>
-              <div class="treatment-title-wrap">
-                <span class="treatment-label">WHAT YOU'VE TRIED #1</span>
-                <h4>Antacids / PPIs</h4>
-              </div>
+      <div class="journey-section">
+        <div class="journey-path">
+          <!-- STEP 1 -->
+          <div class="journey-card">
+            <div class="image-wrap">
+              <img src="images/method-1.jfif"
+                alt="Step 1: Symptom mapping – charting your digestive patterns with a Thavira doctor" loading="lazy" />
+              <div class="step-pill">STEP 01</div>
             </div>
-            <div class="treatment-body">
-              <div class="treatment-does">
-                <span class="meta-tag tag-does"
-                  ><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  What It Actually Does</span
-                >
-                <p>Reduces stomach acid temporarily</p>
-              </div>
-              <div class="treatment-misses">
-                <span class="meta-tag tag-misses"
-                  ><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
-                  What It Misses</span
-                >
-                <p>
-                  Doesn't heal gut lining; can worsen low stomach acid
-                  (hypoacidity) long-term.
-                </p>
-              </div>
+
+            <div class="content">
+              <h3>Symptom Mapping</h3>
+
+              <p>
+                We map your exact digestive pattern— burning, bloating, food
+                reactions, bowel habits and symptom timing.
+              </p>
+
+              <div class="highlight">Understand what's happening daily.</div>
             </div>
           </div>
 
-          <!-- Item 2: Antibiotics -->
-          <div class="treatment-card">
-            <div class="treatment-header">
-              <div class="treatment-icon icon-antibiotic">
-                <i class="fa-solid fa-vial-virus" aria-hidden="true"></i>
-              </div>
-              <div class="treatment-title-wrap">
-                <span class="treatment-label">WHAT YOU'VE TRIED #2</span>
-                <h4>Antibiotics (H. Pylori Course)</h4>
-              </div>
+          <div class="connector"></div>
+
+          <!-- STEP 2 -->
+          <div class="journey-card elevated">
+            <div class="image-wrap">
+              <img src="images/method-2.jfif"
+                alt="Step 2: Root-cause teardown – reviewing patient history, reports and failed treatments"
+                loading="lazy" />
+              <div class="step-pill">STEP 02</div>
             </div>
-            <div class="treatment-body">
-              <div class="treatment-does">
-                <span class="meta-tag tag-does"
-                  ><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  What It Actually Does</span
-                >
-                <p>Clears the active infection</p>
-              </div>
-              <div class="treatment-misses">
-                <span class="meta-tag tag-misses"
-                  ><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
-                  What It Misses</span
-                >
-                <p>
-                  Doesn't repair the gut lining damage the infection or
-                  antibiotics caused.
-                </p>
-              </div>
+
+            <div class="content">
+              <h3>Root-Cause Teardown</h3>
+
+              <p>
+                We review your complete history, failed diets, supplements,
+                medications and previous reports.
+              </p>
+
+              <div class="highlight">Find what's driving the cycle.</div>
             </div>
           </div>
 
-          <!-- Item 3: Probiotics -->
-          <div class="treatment-card">
-            <div class="treatment-header">
-              <div class="treatment-icon icon-probiotic">
-                <i
-                  class="fa-solid fa-prescription-bottle-medical"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <div class="treatment-title-wrap">
-                <span class="treatment-label">WHAT YOU'VE TRIED #3</span>
-                <h4>Probiotics</h4>
-              </div>
-            </div>
-            <div class="treatment-body">
-              <div class="treatment-does">
-                <span class="meta-tag tag-does"
-                  ><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  What It Actually Does</span
-                >
-                <p>Adds good bacteria</p>
-              </div>
-              <div class="treatment-misses">
-                <span class="meta-tag tag-misses"
-                  ><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
-                  What It Misses</span
-                >
-                <p>
-                  Doesn't fix the damaged environment those bacteria need to
-                  survive in.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="connector active"></div>
 
-          <!-- Item 4: Generic Diet Charts -->
-          <div class="treatment-card">
-            <div class="treatment-header">
-              <div class="treatment-icon icon-diet">
-                <i class="fa-solid fa-utensils" aria-hidden="true"></i>
-              </div>
-              <div class="treatment-title-wrap">
-                <span class="treatment-label">WHAT YOU'VE TRIED #4</span>
-                <h4>Generic Diet Charts</h4>
-              </div>
+          <!-- STEP 3 -->
+          <div class="journey-card success">
+            <div class="image-wrap">
+              <img src="images/method-3.jfif"
+                alt="Step 3: Recovery protocol – personalized gut recovery course and supplements playbook"
+                loading="lazy" />
+              <div class="step-pill green">STEP 03</div>
             </div>
-            <div class="treatment-body">
-              <div class="treatment-does">
-                <span class="meta-tag tag-does"
-                  ><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  What It Actually Does</span
-                >
-                <p>Removes trigger foods</p>
-              </div>
-              <div class="treatment-misses">
-                <span class="meta-tag tag-misses"
-                  ><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
-                  What It Misses</span
-                >
-                <p>
-                  Doesn't address low acid, SIBO, or gut lining repair
-                  underneath.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Item 5: Ayurveda / Home Remedies -->
-          <div class="treatment-card">
-            <div class="treatment-header">
-              <div class="treatment-icon icon-ayurveda">
-                <i class="fa-solid fa-leaf" aria-hidden="true"></i>
-              </div>
-              <div class="treatment-title-wrap">
-                <span class="treatment-label">WHAT YOU'VE TRIED #5</span>
-                <h4>Ayurveda &amp; Home Remedies</h4>
-              </div>
-            </div>
-            <div class="treatment-body">
-              <div class="treatment-does">
-                <span class="meta-tag tag-does"
-                  ><i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                  What It Actually Does</span
-                >
-                <p>Manages symptoms temporarily</p>
-              </div>
-              <div class="treatment-misses">
-                <span class="meta-tag tag-misses"
-                  ><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
-                  What It Misses</span
-                >
-                <p>
-                  Rarely identifies the specific case (SIBO vs IBS vs Bile
-                  Reflux, etc.).
-                </p>
+            <div class="content">
+              <h3>The Recovery Protocol</h3>
+
+              <p>
+                Get access to Thavira's Gut Recovery Course & Supplements
+                Playbook with a personalized action plan.
+              </p>
+
+              <div class="highlight success-tag">
+                Your roadmap to recovery.
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- The Thavira Way Difference Box -->
-        <div class="thavira-difference-box">
-          <div class="diff-content">
-            <span class="diff-badge"
-              ><i class="fa-solid fa-sparkles" aria-hidden="true"></i> THE
-              THAVIRA WAY</span
-            >
-            <h4>The Thavira way starts differently</h4>
-            <p>
-              We map your specific pattern first, then treat the actual cause —
-              not the closest matching symptom.
+      <!-- Old Way vs Thavira Way Comparison (Compact & Visual) -->
+      <div class="comparison-wrapper">
+        <div class="comparison-card-container">
+          <div class="comparison-header">
+            <h3 class="comparison-heading">
+              How We Differ From Conventional Approaches
+            </h3>
+            <p class="comparison-subheading">
+              Understanding root-cause mapping vs. continuous symptom
+              suppression
             </p>
           </div>
-          <a
-            href="https://pay1-1.fitumy.in/"
-            class="btn btn-secondary pulse-glow smooth-scroll btn-reality-cta"
-          >
-            Stop Guessing — Book ₹199 Call
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 05 — The Thavira Root-Cause Clarity Method -->
-    <section class="method-section section-padding bg-light">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-label">The Thavira Method</span>
-          <h2 class="section-title">
-            The 3-Step Gut Clarity Map. An Expert-Led Way to Understand What
-            Your Gut Actually Needs Next.
-          </h2>
-        </div>
-
-        <div class="journey-section">
-          <div class="journey-path">
-            <!-- STEP 1 -->
-            <div class="journey-card">
-              <div class="image-wrap">
-                <img
-                  src="images/method-1.jfif"
-                  alt="Step 1: Symptom mapping – charting your digestive patterns with a Thavira doctor"
-                  loading="lazy"
-                />
-                <div class="step-pill">STEP 01</div>
+          <div class="comparison-grid">
+            <!-- CONVENTIONAL APPROACH -->
+            <div class="comparison-col old-col">
+              <div class="col-header old-col-header">
+                <span class="col-tag tag-old"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                  Conventional Way</span>
+                <h4>Symptom Suppression</h4>
               </div>
+              <ul class="compare-list">
+                <li>
+                  <i class="fa-solid fa-xmark text-danger" aria-hidden="true"></i>
+                  <span><strong>Temporary relief:</strong> Suppress symptoms with
+                    antacids &amp; PPIs</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-xmark text-danger" aria-hidden="true"></i>
+                  <span><strong>Trial &amp; error:</strong> Random probiotics
+                    &amp; unguided gut cleanses</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-xmark text-danger" aria-hidden="true"></i>
+                  <span><strong>Generic charts:</strong> One-size-fits-all
+                    restrictive diet rules</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-xmark text-danger" aria-hidden="true"></i>
+                  <span><strong>Unclear answers:</strong> Kept guessing even when
+                    lab reports are "normal"</span>
+                </li>
+              </ul>
+            </div>
 
-              <div class="content">
-                <h3>Symptom Mapping</h3>
+            <!-- VS DIVIDER -->
+            <div class="vs-divider" aria-hidden="true">
+              <span>VS</span>
+            </div>
 
-                <p>
-                  We map your exact digestive pattern— burning, bloating, food
-                  reactions, bowel habits and symptom timing.
-                </p>
-
-                <div class="highlight">Understand what's happening daily.</div>
+            <!-- THAVIRA WAY -->
+            <div class="comparison-col new-col">
+              <div class="col-header new-col-header">
+                <span class="col-tag tag-new"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                  The Thavira 1-on-1 Way</span>
+                <h4>Root-Cause Clarity</h4>
               </div>
-            </div>
-
-            <div class="connector"></div>
-
-            <!-- STEP 2 -->
-            <div class="journey-card elevated">
-              <div class="image-wrap">
-                <img
-                  src="images/method-2.jfif"
-                  alt="Step 2: Root-cause teardown – reviewing patient history, reports and failed treatments"
-                  loading="lazy"
-                />
-                <div class="step-pill">STEP 02</div>
-              </div>
-
-              <div class="content">
-                <h3>Root-Cause Teardown</h3>
-
-                <p>
-                  We review your complete history, failed diets, supplements,
-                  medications and previous reports.
-                </p>
-
-                <div class="highlight">Find what's driving the cycle.</div>
-              </div>
-            </div>
-
-            <div class="connector active"></div>
-
-            <!-- STEP 3 -->
-            <div class="journey-card success">
-              <div class="image-wrap">
-                <img
-                  src="images/method-3.jfif"
-                  alt="Step 3: Recovery protocol – personalized gut recovery course and supplements playbook"
-                  loading="lazy"
-                />
-                <div class="step-pill green">STEP 03</div>
-              </div>
-
-              <div class="content">
-                <h3>The Recovery Protocol</h3>
-
-                <p>
-                  Get access to Thavira's Gut Recovery Course & Supplements
-                  Playbook with a personalized action plan.
-                </p>
-
-                <div class="highlight success-tag">
-                  Your roadmap to recovery.
-                </div>
-              </div>
+              <ul class="compare-list">
+                <li>
+                  <i class="fa-solid fa-check text-success" aria-hidden="true"></i>
+                  <span><strong>Pattern Mapping:</strong> Identify underlying
+                    gut-brain &amp; transit triggers</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success" aria-hidden="true"></i>
+                  <span><strong>Case Specific:</strong> Doctor-led review
+                    tailored to your exact history</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success" aria-hidden="true"></i>
+                  <span><strong>Custom Roadmap:</strong> Personalized 45-day
+                    actionable direction</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success" aria-hidden="true"></i>
+                  <span><strong>Clear Focus:</strong> Know exactly what steps to
+                    fix next for permanent healing</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- Old Way vs Thavira Way Comparison (Compact & Visual) -->
-        <div class="comparison-wrapper">
-          <div class="comparison-card-container">
-            <div class="comparison-header">
-              <h3 class="comparison-heading">
-                How We Differ From Conventional Approaches
-              </h3>
-              <p class="comparison-subheading">
-                Understanding root-cause mapping vs. continuous symptom
-                suppression
-              </p>
-            </div>
-
-            <div class="comparison-grid">
-              <!-- CONVENTIONAL APPROACH -->
-              <div class="comparison-col old-col">
-                <div class="col-header old-col-header">
-                  <span class="col-tag tag-old"
-                    ><i
-                      class="fa-solid fa-triangle-exclamation"
-                      aria-hidden="true"
-                    ></i>
-                    Conventional Way</span
-                  >
-                  <h4>Symptom Suppression</h4>
-                </div>
-                <ul class="compare-list">
-                  <li>
-                    <i
-                      class="fa-solid fa-xmark text-danger"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Temporary relief:</strong> Suppress symptoms with
-                      antacids &amp; PPIs</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-xmark text-danger"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Trial &amp; error:</strong> Random probiotics
-                      &amp; unguided gut cleanses</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-xmark text-danger"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Generic charts:</strong> One-size-fits-all
-                      restrictive diet rules</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-xmark text-danger"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Unclear answers:</strong> Kept guessing even when
-                      lab reports are "normal"</span
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <!-- VS DIVIDER -->
-              <div class="vs-divider" aria-hidden="true">
-                <span>VS</span>
-              </div>
-
-              <!-- THAVIRA WAY -->
-              <div class="comparison-col new-col">
-                <div class="col-header new-col-header">
-                  <span class="col-tag tag-new"
-                    ><i
-                      class="fa-solid fa-shield-halved"
-                      aria-hidden="true"
-                    ></i>
-                    The Thavira 1-on-1 Way</span
-                  >
-                  <h4>Root-Cause Clarity</h4>
-                </div>
-                <ul class="compare-list">
-                  <li>
-                    <i
-                      class="fa-solid fa-check text-success"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Pattern Mapping:</strong> Identify underlying
-                      gut-brain &amp; transit triggers</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-check text-success"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Case Specific:</strong> Doctor-led review
-                      tailored to your exact history</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-check text-success"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Custom Roadmap:</strong> Personalized 45-day
-                      actionable direction</span
-                    >
-                  </li>
-                  <li>
-                    <i
-                      class="fa-solid fa-check text-success"
-                      aria-hidden="true"
-                    ></i>
-                    <span
-                      ><strong>Clear Focus:</strong> Know exactly what steps to
-                      fix next for permanent healing</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <p class="comparison-footer-text">
-            <i class="fa-solid fa-circle-info" aria-hidden="true"></i> This is
-            not about adding another tablet or restriction. It's about knowing
-            what your gut is actually pointing toward.
-          </p>
-        </div>
-
-        <!-- Dynamic Condition Tabs -->
-        <div class="condition-tabs-wrapper">
-          <h3 class="tabs-heading text-center">
-            Select Your Main Condition For Root-Cause Direction:
-          </h3>
-          <div
-            class="tabs-navigation"
-            role="tablist"
-            aria-label="Gut condition selector"
-          >
-            <button
-              class="tab-btn active"
-              data-target="tab-acidity"
-              role="tab"
-              aria-selected="true"
-              aria-controls="tab-acidity"
-            >
-              Acidity &amp; GERD
-            </button>
-            <button
-              class="tab-btn"
-              data-target="tab-ibs"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab-ibs"
-            >
-              IBS &amp; SIBO
-            </button>
-            <button
-              class="tab-btn"
-              data-target="tab-pylori"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab-pylori"
-            >
-              H. Pylori
-            </button>
-            <button
-              class="tab-btn"
-              data-target="tab-constipation"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab-constipation"
-            >
-              Constipation
-            </button>
-            <button
-              class="tab-btn"
-              data-target="tab-bloating"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab-bloating"
-            >
-              Bloating &amp; Gas
-            </button>
-            <button
-              class="tab-btn"
-              data-target="tab-anxiety"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab-anxiety"
-            >
-              Anxiety &amp; Gut-Brain
-            </button>
-          </div>
-          <div class="tabs-content-container">
-            <div
-              id="tab-acidity"
-              class="tab-content active"
-              role="tabpanel"
-              aria-labelledby="tab-acidity"
-            >
-              <h4>Mapping Acidity &amp; GERD Triggers</h4>
-              <p>
-                Instead of just suppressing acid production, we review gut
-                motility, lower esophageal sphincter pressure triggers, and
-                potential low-stomach-acid patterns that cause backflow.
-              </p>
-            </div>
-            <div
-              id="tab-ibs"
-              class="tab-content"
-              role="tabpanel"
-              aria-labelledby="tab-ibs"
-            >
-              <h4>Unravelling IBS &amp; SIBO Patterns</h4>
-              <p>
-                We analyze visceral hypersensitivity, motility loops, and
-                bacterial overgrowth indicators to help direct you toward diet
-                phases that starve bad bacteria without nutritional depletion.
-              </p>
-            </div>
-            <div
-              id="tab-pylori"
-              class="tab-content"
-              role="tabpanel"
-              aria-labelledby="tab-pylori"
-            >
-              <h4>Solving H. Pylori Relapses</h4>
-              <p>
-                If antibiotic therapies left your gut burning, we focus on
-                mucosal barrier defense support, restoring healthy acidity
-                thresholds, and addressing remaining gut inflammation.
-              </p>
-            </div>
-            <div
-              id="tab-constipation"
-              class="tab-content"
-              role="tabpanel"
-              aria-labelledby="tab-constipation"
-            >
-              <h4>Reactivating Natural Gut Motility</h4>
-              <p>
-                We analyze bile flow patterns, pelvic floor function indicators,
-                and enteric nervous system triggers to stop your dependency on
-                harsh OTC laxatives or herbal churans.
-              </p>
-            </div>
-            <div
-              id="tab-bloating"
-              class="tab-content"
-              role="tabpanel"
-              aria-labelledby="tab-bloating"
-            >
-              <h4>Decompressing Bloating &amp; Gas</h4>
-              <p>
-                We map enzyme deficiencies, gut fermentation levels, and food
-                transit patterns to isolate which food categories are fermenting
-                prematurely in your small intestine.
-              </p>
-            </div>
-            <div
-              id="tab-anxiety"
-              class="tab-content"
-              role="tabpanel"
-              aria-labelledby="tab-anxiety"
-            >
-              <h4>Breaking the Anxiety-Gut Loop</h4>
-              <p>
-                We look at vagus nerve regulation, gut-produced serotonin
-                levels, and whether your anxiety is driving your gut symptoms or
-                your gut is driving your anxiety, because for most people, it's
-                both, and they've never been treated together.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bridge-line text-center">
-          <p>
-            It's about knowing what your gut issue is actually pointing toward,
-            so the fix can be permanent instead of temporary
-          </p>
-          <a
-            href="https://pay1-1.fitumy.in/"
-            class="btn btn-secondary smooth-scroll"
-            >Get Personalised Gut Clarity — ₹199</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="team-section">
-      <div class="container">
-        <div class="heading">
-          <p class="eyebrow">YOUR TREATMENT TEAM</p>
-
-          <h2>A.Y.U.S.H Certified Doctors.</h2>
-
-          <p class="subheading">
-            <span>Not coaches. Not nutritionists.</span>
-          </p>
-        </div>
-
-        <div class="team-carousel-container">
-          <div class="team-carousel">
-            <div class="team-card">
-              <img
-                src="images/sinchana.webp"
-                alt="Dr. Sinchana – Medical Director at Thavira Health"
-                loading="lazy"
-              />
-              <div class="card-overlay">
-                <div class="pill">A.Y.U.S.H Certified</div>
-                <h3>Dr. Sinchana</h3>
-                <p>Medical Director</p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <img
-                src="images/yash.webp"
-                alt="Dr. Yash – Medical Director at Thavira Health"
-                loading="lazy"
-              />
-              <div class="card-overlay">
-                <div class="pill">A.Y.U.S.H Certified</div>
-                <h3>Dr. Yash</h3>
-                <p>Medical Director</p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <img
-                src="images/rayan.webp"
-                alt="Dr. Rayan – Founder and Doctor at Thavira Health"
-                loading="lazy"
-              />
-              <div class="card-overlay">
-                <div class="pill">A.Y.U.S.H Certified</div>
-                <h3>Dr. Rayan</h3>
-                <p>Founder | Doctor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pagination">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 08 — Who This Call Is For / Not For -->
-    <section class="qualification-section section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title text-white">
-            This Call Is for Serious Gut Sufferers. <br />Not Casual Gut
-            Curiosity.
-          </h2>
-        </div>
-
-        <div class="qualification-grid">
-          <!-- For You -->
-          <div class="qual-col for-you">
-            <h3>
-              <i
-                class="fa-solid fa-circle-check text-success"
-                aria-hidden="true"
-              ></i>
-              This is FOR you if:
-            </h3>
-            <ul>
-              <li>Your gut issues have lasted 6+ months</li>
-              <li>
-                You've tried medicines, probiotics, diet changes or home
-                remedies
-              </li>
-              <li>
-                You're dependent on antacids, PPIs, laxatives or digestive aids.
-              </li>
-              <li>Your reports look normal but symptoms still continue.</li>
-              <li>
-                You're tired of food fear, washroom anxiety and low energy.
-              </li>
-              <li>
-                You want expert-led clarity before trying another treatment
-                path.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Not For You -->
-          <div class="qual-col not-for-you">
-            <h3>
-              <i
-                class="fa-solid fa-circle-xmark text-muted"
-                aria-hidden="true"
-              ></i>
-              This is NOT for you if:
-            </h3>
-            <ul>
-              <li>You want free tips only.</li>
-              <li>You're looking for emergency medical care</li>
-              <li>You expect a magic supplement or overnight cure.</li>
-              <li>You want a diet chart without sharing your history.</li>
-              <li>You're not willing to discuss your symptoms honestly</li>
-              <li>
-                You're satisfied with how your gut is currently being managed
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="filter-line text-center text-white">
-          <a
-            style="background: black"
-            href="https://pay1-1.fitumy.in/"
-            class="btn btn-primary animatedgradient smooth-scroll"
-            >Yes, I Want Gut Clarity — ₹199 Book Now</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 12 — FAQ / Objection Handling -->
-    <section class="faq-section section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-label">Quick Answers</span>
-          <h2 class="section-title">Got Questions? We Have Answers.</h2>
-        </div>
-
-        <div class="faq-container">
-          <!-- FAQ 1 (Open by default) -->
-          <div class="faq-item active">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="true"
-            >
-              <span>Is this a treatment program or a consultation?</span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                This is a ₹199 gut clarity consultation — not a full treatment
-                program. The goal is to understand your symptoms, history and
-                likely root-cause direction so you know what your next step
-                should be.
-              </p>
-            </div>
-          </div>
-          <!-- FAQ 2 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span>Will I speak with a expert?</span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Yes. After payment, Thavira's team contacts you and confirms
-                your slot. Your consultation is then scheduled with an expert
-              </p>
-            </div>
-          </div>
-          <!-- FAQ 3 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span
-                >I've already tried allopathy, Ayurveda, probiotics and diet
-                changes. How is this different?
-              </span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Most approaches focus on relief first. This call focuses on
-                clarity first — your symptom pattern, history, current medicines
-                and what direction your gut issue may actually be pointing
-                toward.
-              </p>
-            </div>
-          </div>
-          <!-- FAQ 4 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span>Will I be asked to stop my medicines? </span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No. Do not change any prescribed medication without expert
-                guidance. If you are taking prescribed medicines, continue them
-                unless your doctor advises otherwise.
-              </p>
-            </div>
-          </div>
-          <!-- FAQ 5 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span>Is this only for IBS, SIBO or H. Pylori? </span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No. The call covers all chronic gut issues — acidity, GERD,
-                bloating, constipation, indigestion, H. Pylori history,
-                IBS/SIBO-like symptoms and recurring stomach discomfort.
-              </p>
-            </div>
-          </div>
-          <!-- FAQ 6 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span
-                >My reports are normal but I still have symptoms. Should I book?
-              </span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Yes — this is one of the most common reasons people book.
-                Reports can look normal while symptoms still affect your meals,
-                energy, sleep and daily routine. The call helps connect your
-                history with your current pattern.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 7 -->
-          <div class="faq-item">
-            <div
-              class="faq-question"
-              role="button"
-              tabindex="0"
-              aria-expanded="false"
-            >
-              <span>Can my anxiety actually be caused by my gut? </span>
-              <span class="faq-toggle"
-                ><i class="fa-solid fa-plus" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Often, yes. About 90% of your serotonin, the hormone tied to
-                mood and sleep, is made in your gut. When your gut is inflamed
-                or imbalanced, that production drops, which is why anxiety and
-                gut issues so often show up together. We look at both in the
-                same consultation, not just your digestion in isolation.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-footer text-center">
-          <a
-            href="https://pay1-1.fitumy.in/"
-            class="btn btn-primary pulse-glow smooth-scroll"
-            >Fix your Gut the right way, 1-1 clarity call @ ₹199</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 14 — Footer + Disclaimer -->
-    <footer class="main-footer">
-      <div class="container footer-container">
-        <p class="medical-disclaimer">
-          <strong>Medical Disclaimer:</strong> The Thavira Gut Clarity Call is a
-          consultation for education, gut health review and next-step direction.
-          It is not emergency medical care and does not replace in-person
-          diagnosis, emergency treatment or prescribed medical advice.
-          Individual outcomes vary. Do not stop, change or reduce any prescribed
-          medication without guidance from a qualified doctor
+        <p class="comparison-footer-text">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i> This is
+          not about adding another tablet or restriction. It's about knowing
+          what your gut is actually pointing toward.
         </p>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-          <p class="copyright">&copy; 2026 Thavira. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="https://thavirahealth.com/privacy_policy.html"
-              >Privacy Policy</a
-            >
-            <span class="link-sep">•</span>
-            <a href="https://thavirahealth.com/terms_and_conditions.html"
-              >Terms &amp; Conditions</a
-            >
-            <span class="link-sep">•</span>
-            <span class="support-text"
-              >Support: support@thavirahealth.com | +91 98765 43210</span
-            >
+      </div>
+
+      <!-- Dynamic Condition Tabs -->
+      <div class="condition-tabs-wrapper">
+        <h3 class="tabs-heading text-center">
+          Select Your Main Condition For Root-Cause Direction:
+        </h3>
+        <div class="tabs-navigation" role="tablist" aria-label="Gut condition selector">
+          <button class="tab-btn active" data-target="tab-acidity" role="tab" aria-selected="true"
+            aria-controls="tab-acidity">
+            Acidity &amp; GERD
+          </button>
+          <button class="tab-btn" data-target="tab-ibs" role="tab" aria-selected="false" aria-controls="tab-ibs">
+            IBS &amp; SIBO
+          </button>
+          <button class="tab-btn" data-target="tab-pylori" role="tab" aria-selected="false" aria-controls="tab-pylori">
+            H. Pylori
+          </button>
+          <button class="tab-btn" data-target="tab-constipation" role="tab" aria-selected="false"
+            aria-controls="tab-constipation">
+            Constipation
+          </button>
+          <button class="tab-btn" data-target="tab-bloating" role="tab" aria-selected="false"
+            aria-controls="tab-bloating">
+            Bloating &amp; Gas
+          </button>
+          <button class="tab-btn" data-target="tab-anxiety" role="tab" aria-selected="false"
+            aria-controls="tab-anxiety">
+            Anxiety &amp; Gut-Brain
+          </button>
+        </div>
+        <div class="tabs-content-container">
+          <div id="tab-acidity" class="tab-content active" role="tabpanel" aria-labelledby="tab-acidity">
+            <h4>Mapping Acidity &amp; GERD Triggers</h4>
+            <p>
+              Instead of just suppressing acid production, we review gut
+              motility, lower esophageal sphincter pressure triggers, and
+              potential low-stomach-acid patterns that cause backflow.
+            </p>
+          </div>
+          <div id="tab-ibs" class="tab-content" role="tabpanel" aria-labelledby="tab-ibs">
+            <h4>Unravelling IBS &amp; SIBO Patterns</h4>
+            <p>
+              We analyze visceral hypersensitivity, motility loops, and
+              bacterial overgrowth indicators to help direct you toward diet
+              phases that starve bad bacteria without nutritional depletion.
+            </p>
+          </div>
+          <div id="tab-pylori" class="tab-content" role="tabpanel" aria-labelledby="tab-pylori">
+            <h4>Solving H. Pylori Relapses</h4>
+            <p>
+              If antibiotic therapies left your gut burning, we focus on
+              mucosal barrier defense support, restoring healthy acidity
+              thresholds, and addressing remaining gut inflammation.
+            </p>
+          </div>
+          <div id="tab-constipation" class="tab-content" role="tabpanel" aria-labelledby="tab-constipation">
+            <h4>Reactivating Natural Gut Motility</h4>
+            <p>
+              We analyze bile flow patterns, pelvic floor function indicators,
+              and enteric nervous system triggers to stop your dependency on
+              harsh OTC laxatives or herbal churans.
+            </p>
+          </div>
+          <div id="tab-bloating" class="tab-content" role="tabpanel" aria-labelledby="tab-bloating">
+            <h4>Decompressing Bloating &amp; Gas</h4>
+            <p>
+              We map enzyme deficiencies, gut fermentation levels, and food
+              transit patterns to isolate which food categories are fermenting
+              prematurely in your small intestine.
+            </p>
+          </div>
+          <div id="tab-anxiety" class="tab-content" role="tabpanel" aria-labelledby="tab-anxiety">
+            <h4>Breaking the Anxiety-Gut Loop</h4>
+            <p>
+              We look at vagus nerve regulation, gut-produced serotonin
+              levels, and whether your anxiety is driving your gut symptoms or
+              your gut is driving your anxiety, because for most people, it's
+              both, and they've never been treated together.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
 
-    <!-- STICKY MOVEABLE FLOATING CTA BAR -->
-    <div class="sticky-mobile-cta" id="moveable-cta">
-      <div class="consultation-bar">
-        <div class="consultation-left">
-          <div class="live-indicator">
-            <span class="pulse-dot-wrap">
-              <span class="pulse-dot"></span>
-              <span class="pulse-ring"></span>
+      <div class="bridge-line text-center">
+        <p>
+          It's about knowing what your gut issue is actually pointing toward,
+          so the fix can be permanent instead of temporary
+        </p>
+        <a href="https://pay1-1.fitumy.in/" class="btn btn-secondary smooth-scroll">Get Personalised Gut Clarity —
+          ₹199</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+      <div class="heading">
+        <p class="eyebrow">YOUR TREATMENT TEAM</p>
+
+        <h2>A.Y.U.S.H Certified Doctors.</h2>
+
+        <p class="subheading">
+          <span>Not coaches. Not nutritionists.</span>
+        </p>
+      </div>
+
+      <div class="team-carousel-container">
+        <div class="team-carousel">
+          <div class="team-card">
+            <img src="images/sinchana.webp" alt="Dr. Sinchana – Medical Director at Thavira Health" loading="lazy" />
+            <div class="card-overlay">
+              <div class="pill">A.Y.U.S.H Certified</div>
+              <h3>Dr. Sinchana</h3>
+              <p>Medical Director</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="images/yash.webp" alt="Dr. Yash – Medical Director at Thavira Health" loading="lazy" />
+            <div class="card-overlay">
+              <div class="pill">A.Y.U.S.H Certified</div>
+              <h3>Dr. Yash</h3>
+              <p>Medical Director</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="images/rayan.webp" alt="Dr. Rayan – Founder and Doctor at Thavira Health" loading="lazy" />
+            <div class="card-overlay">
+              <div class="pill">A.Y.U.S.H Certified</div>
+              <h3>Dr. Rayan</h3>
+              <p>Founder | Doctor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 08 — Who This Call Is For / Not For -->
+  <section class="qualification-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title text-white">
+          This Call Is for Serious Gut Sufferers. <br />Not Casual Gut
+          Curiosity.
+        </h2>
+      </div>
+
+      <div class="qualification-grid">
+        <!-- For You -->
+        <div class="qual-col for-you">
+          <h3>
+            <i class="fa-solid fa-circle-check text-success" aria-hidden="true"></i>
+            This is FOR you if:
+          </h3>
+          <ul>
+            <li>Your gut issues have lasted 6+ months</li>
+            <li>
+              You've tried medicines, probiotics, diet changes or home
+              remedies
+            </li>
+            <li>
+              You're dependent on antacids, PPIs, laxatives or digestive aids.
+            </li>
+            <li>Your reports look normal but symptoms still continue.</li>
+            <li>
+              You're tired of food fear, washroom anxiety and low energy.
+            </li>
+            <li>
+              You want expert-led clarity before trying another treatment
+              path.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Not For You -->
+        <div class="qual-col not-for-you">
+          <h3>
+            <i class="fa-solid fa-circle-xmark text-muted" aria-hidden="true"></i>
+            This is NOT for you if:
+          </h3>
+          <ul>
+            <li>You want free tips only.</li>
+            <li>You're looking for emergency medical care</li>
+            <li>You expect a magic supplement or overnight cure.</li>
+            <li>You want a diet chart without sharing your history.</li>
+            <li>You're not willing to discuss your symptoms honestly</li>
+            <li>
+              You're satisfied with how your gut is currently being managed
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="filter-line text-center text-white">
+        <a style="background: black" href="https://pay1-1.fitumy.in/"
+          class="btn btn-primary animatedgradient smooth-scroll">Yes, I Want Gut Clarity — ₹199 Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12 — FAQ / Objection Handling -->
+  <section class="faq-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Quick Answers</span>
+        <h2 class="section-title">Got Questions? We Have Answers.</h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 (Open by default) -->
+        <div class="faq-item active">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="true">
+            <span>Is this a treatment program or a consultation?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              This is a ₹199 gut clarity consultation — not a full treatment
+              program. The goal is to understand your symptoms, history and
+              likely root-cause direction so you know what your next step
+              should be.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Will I speak with a expert?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes. After payment, Thavira's team contacts you and confirms
+              your slot. Your consultation is then scheduled with an expert
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>I've already tried allopathy, Ayurveda, probiotics and diet
+              changes. How is this different?
             </span>
-            <span class="live-text">LIMITED SLOTS TODAY</span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
           </div>
-
-          <div class="consultation-title-row">
-            <span class="consultation-title">Gut Clarity Call</span>
-            <div class="price-box">
-              <span class="old-price">₹999</span>
-              <span class="current-price">₹199</span>
-              <span class="save-tag">80% OFF</span>
-            </div>
+          <div class="faq-answer">
+            <p>
+              Most approaches focus on relief first. This call focuses on
+              clarity first — your symptom pattern, history, current medicines
+              and what direction your gut issue may actually be pointing
+              toward.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Will I be asked to stop my medicines? </span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              No. Do not change any prescribed medication without expert
+              guidance. If you are taking prescribed medicines, continue them
+              unless your doctor advises otherwise.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Is this only for IBS, SIBO or H. Pylori? </span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              No. The call covers all chronic gut issues — acidity, GERD,
+              bloating, constipation, indigestion, H. Pylori history,
+              IBS/SIBO-like symptoms and recurring stomach discomfort.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>My reports are normal but I still have symptoms. Should I book?
+            </span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes — this is one of the most common reasons people book.
+              Reports can look normal while symptoms still affect your meals,
+              energy, sleep and daily routine. The call helps connect your
+              history with your current pattern.
+            </p>
           </div>
         </div>
 
-        <div class="consultation-right">
-          <a href="https://pay1-1.fitumy.in/" class="consultation-btn">
-            <span>Book Now</span>
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </a>
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Can my anxiety actually be caused by my gut? </span>
+            <span class="faq-toggle"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Often, yes. About 90% of your serotonin, the hormone tied to
+              mood and sleep, is made in your gut. When your gut is inflamed
+              or imbalanced, that production drops, which is why anxiety and
+              gut issues so often show up together. We look at both in the
+              same consultation, not just your digestion in isolation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-footer text-center">
+        <a href="https://pay1-1.fitumy.in/" class="btn btn-primary pulse-glow smooth-scroll">Fix your Gut the right way,
+          1-1 clarity call @ ₹199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 14 — Footer + Disclaimer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <p class="medical-disclaimer">
+        <strong>Medical Disclaimer:</strong> The Thavira Gut Clarity Call is a
+        consultation for education, gut health review and next-step direction.
+        It is not emergency medical care and does not replace in-person
+        diagnosis, emergency treatment or prescribed medical advice.
+        Individual outcomes vary. Do not stop, change or reduce any prescribed
+        medication without guidance from a qualified doctor
+      </p>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Thavira. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://thavirahealth.com/privacy_policy.html">Privacy Policy</a>
+          <span class="link-sep">•</span>
+          <a href="https://thavirahealth.com/terms_and_conditions.html">Terms &amp; Conditions</a>
+          <span class="link-sep">•</span>
+          <span class="support-text">Support: support@thavirahealth.com | +91 98765 43210</span>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- TESTIMONIAL VIDEO MODAL OVERLAY -->
-    <div
-      class="modal-overlay"
-      id="video-modal"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Video testimonial player"
-    >
-      <div class="modal-content">
-        <button
-          class="modal-close"
-          id="modal-close-btn"
-          aria-label="Close video modal"
-        >
-          &times;
-        </button>
-        <div class="modal-video-container">
-          <!-- Mockup video player to simulate clinical video testimonial -->
-          <div class="mock-player">
-            <div class="mock-player-logo">
-              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-              THAVIRA CLINICAL CASE
+  <!-- STICKY MOVEABLE FLOATING CTA BAR -->
+  <div class="sticky-mobile-cta" id="moveable-cta">
+    <div class="consultation-bar">
+      <div class="consultation-left">
+        <div class="live-indicator">
+          <span class="pulse-dot-wrap">
+            <span class="pulse-dot"></span>
+            <span class="pulse-ring"></span>
+          </span>
+          <span class="live-text">LIMITED SLOTS TODAY</span>
+        </div>
+
+        <div class="consultation-title-row">
+          <span class="consultation-title">Gut Clarity Call</span>
+          <div class="price-box">
+            <span class="old-price">₹999</span>
+            <span class="current-price">₹199</span>
+            <span class="save-tag">80% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="consultation-right">
+        <a href="https://pay1-1.fitumy.in/" class="consultation-btn">
+          <span>Book Now</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL VIDEO MODAL OVERLAY -->
+  <div class="modal-overlay" id="video-modal" role="dialog" aria-modal="true" aria-label="Video testimonial player">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close video modal">
+        &times;
+      </button>
+      <div class="modal-video-container">
+        <!-- Mockup video player to simulate clinical video testimonial -->
+        <div class="mock-player">
+          <div class="mock-player-logo">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            THAVIRA CLINICAL CASE
+          </div>
+          <div class="mock-player-center">
+            <span class="mock-player-pulse"><i class="fa-solid fa-volume-high" aria-hidden="true"></i></span>
+            <h4>Amit Verma Case Study Recording</h4>
+            <p>Simulating 1:1 consultation outcome call transcript...</p>
+          </div>
+          <div class="mock-player-subtitles">
+            <p>
+              "...antacids were just temporary. Once Thavira mapped the
+              transit issue, my bloating vanished."
+            </p>
+          </div>
+          <div class="mock-player-controls">
+            <div class="control-left">
+              <i class="fa-solid fa-pause" aria-hidden="true"></i>
+              <span class="time-elapsed">01:42 / 04:30</span>
             </div>
-            <div class="mock-player-center">
-              <span class="mock-player-pulse"
-                ><i class="fa-solid fa-volume-high" aria-hidden="true"></i
-              ></span>
-              <h4>Amit Verma Case Study Recording</h4>
-              <p>Simulating 1:1 consultation outcome call transcript...</p>
+            <div class="progress-bar-mock">
+              <div class="progress-bar-fill"></div>
             </div>
-            <div class="mock-player-subtitles">
-              <p>
-                "...antacids were just temporary. Once Thavira mapped the
-                transit issue, my bloating vanished."
-              </p>
-            </div>
-            <div class="mock-player-controls">
-              <div class="control-left">
-                <i class="fa-solid fa-pause" aria-hidden="true"></i>
-                <span class="time-elapsed">01:42 / 04:30</span>
-              </div>
-              <div class="progress-bar-mock">
-                <div class="progress-bar-fill"></div>
-              </div>
-              <div class="control-right">
-                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
-                <i class="fa-solid fa-expand" aria-hidden="true"></i>
-              </div>
+            <div class="control-right">
+              <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+              <i class="fa-solid fa-expand" aria-hidden="true"></i>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Interactive Logic scripts -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // 1. Smooth scroll to anchors (only intercept internal #hash links)
-        const scrollButtons = document.querySelectorAll(".smooth-scroll");
-        scrollButtons.forEach((button) => {
-          button.addEventListener("click", function (e) {
-            const targetId = this.getAttribute("href");
-            // Only intercept internal anchor links (starting with #)
-            if (targetId && targetId.startsWith("#")) {
-              e.preventDefault();
-              const targetElement = document.querySelector(targetId);
-              if (targetElement) {
-                targetElement.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }
-            }
-            // External URLs (like Razorpay) will navigate normally
-          });
-        });
-
-        // 2. Tab switching logic for Section 05
-        const tabButtons = document.querySelectorAll(".tab-btn");
-        const tabContents = document.querySelectorAll(".tab-content");
-
-        tabButtons.forEach((btn) => {
-          btn.addEventListener("click", function () {
-            const targetId = this.getAttribute("data-target");
-
-            tabButtons.forEach((b) => {
-              b.classList.remove("active");
-              b.setAttribute("aria-selected", "false");
-            });
-            tabContents.forEach((c) => c.classList.remove("active"));
-
-            this.classList.add("active");
-            this.setAttribute("aria-selected", "true");
-            const activeContent = document.getElementById(targetId);
-            if (activeContent) {
-              activeContent.classList.add("active");
-            }
-          });
-        });
-
-        // 3. FAQ Accordion toggle (with ARIA support)
-        const faqItems = document.querySelectorAll(".faq-item");
-        faqItems.forEach((item) => {
-          const question = item.querySelector(".faq-question");
-          question.addEventListener("click", function () {
-            const isActive = item.classList.contains("active");
-
-            // Close all
-            faqItems.forEach((i) => {
-              i.classList.remove("active");
-              i.querySelector(".faq-toggle i").className = "fa-solid fa-plus";
-              i.querySelector(".faq-question").setAttribute(
-                "aria-expanded",
-                "false",
-              );
-            });
-
-            // Toggle current
-            if (!isActive) {
-              item.classList.add("active");
-              item.querySelector(".faq-toggle i").className =
-                "fa-solid fa-minus";
-              question.setAttribute("aria-expanded", "true");
-            }
-          });
-
-          // Keyboard support for FAQ
-          question.addEventListener("keydown", function (e) {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              question.click();
-            }
-          });
-        });
-
-        // 4. Video Modal control
-        const playBtn = document.getElementById("video-play-btn");
-        const videoModal = document.getElementById("video-modal");
-        const closeBtn = document.getElementById("modal-close-btn");
-
-        if (playBtn && videoModal) {
-          playBtn.addEventListener("click", function () {
-            videoModal.classList.add("show");
-            document.body.style.overflow = "hidden"; // stop scroll
-          });
-
-          closeBtn.addEventListener("click", function () {
-            videoModal.classList.remove("show");
-            document.body.style.overflow = "";
-          });
-
-          videoModal.addEventListener("click", function (e) {
-            if (e.target === videoModal) {
-              videoModal.classList.remove("show");
-              document.body.style.overflow = "";
-            }
-          });
-        }
-
-        // 5. Moveable Floating CTA Scroll Observer
-        const moveableCta = document.getElementById("moveable-cta");
-        if (moveableCta) {
-          function checkCtaVisibility() {
-            if (window.scrollY > 280) {
-              moveableCta.classList.add("show");
-            } else {
-              moveableCta.classList.remove("show");
+  <!-- Interactive Logic scripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 1. Smooth scroll to anchors (only intercept internal #hash links)
+      const scrollButtons = document.querySelectorAll(".smooth-scroll");
+      scrollButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          // Only intercept internal anchor links (starting with #)
+          if (targetId && targetId.startsWith("#")) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
             }
           }
-          window.addEventListener("scroll", checkCtaVisibility, {
-            passive: true,
-          });
-          checkCtaVisibility();
-        }
+          // External URLs (like Razorpay) will navigate normally
+        });
       });
-    </script>
 
-    <script>
-      const cards = document.querySelectorAll(".team-card");
-      const dots = document.querySelectorAll(".dot");
+      // 2. Tab switching logic for Section 05
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
 
-      let current = 0;
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const targetId = this.getAttribute("data-target");
 
-      function updateSlider() {
-        cards.forEach((card) => {
-          card.classList.remove("active", "prev", "next");
+          tabButtons.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          tabContents.forEach((c) => c.classList.remove("active"));
+
+          this.classList.add("active");
+          this.setAttribute("aria-selected", "true");
+          const activeContent = document.getElementById(targetId);
+          if (activeContent) {
+            activeContent.classList.add("active");
+          }
+        });
+      });
+
+      // 3. FAQ Accordion toggle (with ARIA support)
+      const faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        question.addEventListener("click", function () {
+          const isActive = item.classList.contains("active");
+
+          // Close all
+          faqItems.forEach((i) => {
+            i.classList.remove("active");
+            i.querySelector(".faq-toggle i").className = "fa-solid fa-plus";
+            i.querySelector(".faq-question").setAttribute(
+              "aria-expanded",
+              "false",
+            );
+          });
+
+          // Toggle current
+          if (!isActive) {
+            item.classList.add("active");
+            item.querySelector(".faq-toggle i").className =
+              "fa-solid fa-minus";
+            question.setAttribute("aria-expanded", "true");
+          }
         });
 
-        dots.forEach((dot) => {
-          dot.classList.remove("active");
+        // Keyboard support for FAQ
+        question.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            question.click();
+          }
+        });
+      });
+
+      // 4. Video Modal control
+      const playBtn = document.getElementById("video-play-btn");
+      const videoModal = document.getElementById("video-modal");
+      const closeBtn = document.getElementById("modal-close-btn");
+
+      if (playBtn && videoModal) {
+        playBtn.addEventListener("click", function () {
+          videoModal.classList.add("show");
+          document.body.style.overflow = "hidden"; // stop scroll
         });
 
-        const prev = (current - 1 + cards.length) % cards.length;
+        closeBtn.addEventListener("click", function () {
+          videoModal.classList.remove("show");
+          document.body.style.overflow = "";
+        });
 
-        const next = (current + 1) % cards.length;
-
-        cards[current].classList.add("active");
-        cards[prev].classList.add("prev");
-        cards[next].classList.add("next");
-
-        dots[current].classList.add("active");
+        videoModal.addEventListener("click", function (e) {
+          if (e.target === videoModal) {
+            videoModal.classList.remove("show");
+            document.body.style.overflow = "";
+          }
+        });
       }
 
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          current = index;
-          updateSlider();
+      // 5. Moveable Floating CTA Scroll Observer
+      const moveableCta = document.getElementById("moveable-cta");
+      if (moveableCta) {
+        function checkCtaVisibility() {
+          if (window.scrollY > 280) {
+            moveableCta.classList.add("show");
+          } else {
+            moveableCta.classList.remove("show");
+          }
+        }
+        window.addEventListener("scroll", checkCtaVisibility, {
+          passive: true,
         });
+        checkCtaVisibility();
+      }
+    });
+  </script>
+
+  <script>
+    const cards = document.querySelectorAll(".team-card");
+    const dots = document.querySelectorAll(".dot");
+
+    let current = 0;
+
+    function updateSlider() {
+      cards.forEach((card) => {
+        card.classList.remove("active", "prev", "next");
       });
 
-      cards.forEach((card, index) => {
-        card.addEventListener("click", () => {
-          if (index === current) return;
-
-          current = index;
-          updateSlider();
-        });
+      dots.forEach((dot) => {
+        dot.classList.remove("active");
       });
 
-      setInterval(() => {
-        current = (current + 1) % cards.length;
+      const prev = (current - 1 + cards.length) % cards.length;
+
+      const next = (current + 1) % cards.length;
+
+      cards[current].classList.add("active");
+      cards[prev].classList.add("prev");
+      cards[next].classList.add("next");
+
+      dots[current].classList.add("active");
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        current = index;
         updateSlider();
-      }, 5000);
+      });
+    });
 
+    cards.forEach((card, index) => {
+      card.addEventListener("click", () => {
+        if (index === current) return;
+
+        current = index;
+        updateSlider();
+      });
+    });
+
+    setInterval(() => {
+      current = (current + 1) % cards.length;
       updateSlider();
-    </script>
-  </body>
+    }, 5000);
+
+    updateSlider();
+  </script>
+</body>
+
 </html>
