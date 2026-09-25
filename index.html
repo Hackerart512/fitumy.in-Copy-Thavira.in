@@ -1673,6 +1673,18 @@
 
     updateSlider();
   </script>
+
+
+  <script>
+    (function () {
+      var q = window.location.search;
+      if (!q) return;
+      document.querySelectorAll('a[href^="https://pay1-1.fitumy.in"]').forEach(function (a) {
+        a.href = a.href.split("?")[0] + q;
+      });
+    })();
+  </script>
+  
 </body>
 
 </html>
