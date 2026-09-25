@@ -2,6 +2,15 @@
    THAVIRA GUT CLARITY LANDING PAGE DESIGN SYSTEM
    ========================================================================== */
 
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/outfit.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Color Tokens & Base Variables */
 :root {
   --color-forest: #314528;

@@ -9,8 +9,8 @@
     content="Stop guessing why your gut issues keep coming back. Book a private 1:1 Gut Clarity Call for ₹199 and get a personalized 45-day next-step plan from an AYUSH-certified doctor." />
 
   <!-- Hero section video -->
-<script src="https://fast.wistia.com/player.js" async></script>
-<script src="https://fast.wistia.com/embed/iet9ycnkvc.js" async type="module"></script>
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src="https://fast.wistia.com/embed/iet9ycnkvc.js" async type="module"></script>
 
   <!-- Preload LCP image — eliminates render-blocking image discovery delay -->
   <link rel="preload" href="images/Thavira_lp_banner.webp" as="image" fetchpriority="high" />
@@ -18,21 +18,24 @@
   <!-- Main stylesheet (critical — kept blocking for layout stability) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Google Fonts — preconnect + non-blocking load (removes ~750 ms render block) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet" media="print" onload="this.media = 'all'" />
-  <noscript>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet" />
-  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preload" href="/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
 
   <!-- FontAwesome Icons — non-blocking (removes ~1,500 ms render block + 18 KB unused CSS) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <link
+  rel="preload"
+  href="/fonts/outfit.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
   <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
@@ -1684,7 +1687,7 @@
       });
     })();
   </script>
-  
+
 </body>
 
 </html>
