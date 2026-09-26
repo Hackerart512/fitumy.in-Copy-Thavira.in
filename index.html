@@ -30,12 +30,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <link
-  rel="preload"
-  href="/fonts/outfit.woff2"
-  as="font"
-  type="font/woff2"
-  crossorigin
->
+    rel="preload"
+    href="/fonts/outfit.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
   <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
@@ -482,7 +482,7 @@
           <!-- Step 1 -->
           <div class="chain-card light-card step-1">
             <div class="chain-card-img-wrap">
-              <img src="images/step1_stress_pylori.jpg" alt="H. Pylori or Chronic Stress initial trigger"
+              <img src="images/step1_stress_pylori.avif" alt="H. Pylori or Chronic Stress initial trigger"
                 loading="lazy" />
               <span class="stage-pill-light pill-red">STEP 01</span>
             </div>
@@ -511,7 +511,7 @@
           <!-- Step 2 -->
           <div class="chain-card light-card step-2">
             <div class="chain-card-img-wrap">
-              <img src="images/step2_acid_imbalance.jpg" alt="Imbalanced stomach acid level" loading="lazy" />
+              <img src="images/step2_acid_imbalance.avif" alt="Imbalanced stomach acid level" loading="lazy" />
               <span class="stage-pill-light pill-amber">STEP 02</span>
             </div>
             <div class="chain-card-content">
@@ -537,7 +537,7 @@
           <!-- Step 3 -->
           <div class="chain-card light-card step-3">
             <div class="chain-card-img-wrap">
-              <img src="images/step3_sibo_dysbiosis.jpg" alt="SIBO and Dysbiosis bacterial overgrowth" loading="lazy" />
+              <img src="images/step3_sibo_dysbiosis.avif" alt="SIBO and Dysbiosis bacterial overgrowth" loading="lazy" />
               <span class="stage-pill-light pill-orange">STEP 03</span>
             </div>
             <div class="chain-card-content">
@@ -563,7 +563,7 @@
           <!-- Step 4 -->
           <div class="chain-card light-card step-4">
             <div class="chain-card-img-wrap">
-              <img src="images/step4_leaky_gut.jpg" alt="Leaky gut lining damaged barrier" loading="lazy" />
+              <img src="images/step4_leaky_gut.avif" alt="Leaky gut lining damaged barrier" loading="lazy" />
               <span class="stage-pill-light pill-rose">STEP 04</span>
             </div>
             <div class="chain-card-content">
@@ -589,7 +589,7 @@
           <!-- Step 5 -->
           <div class="chain-card light-card step-5">
             <div class="chain-card-img-wrap">
-              <img src="images/step5_gut_brain_anxiety.jpg" alt="Severe gut issues and anxiety symptoms"
+              <img src="images/step5_gut_brain_anxiety.avif" alt="Severe gut issues and anxiety symptoms"
                 loading="lazy" />
               <span class="stage-pill-light pill-green">STEP 05</span>
             </div>
@@ -1584,30 +1584,7 @@
           }
         });
       });
-
-      // 4. Video Modal control
-      const playBtn = document.getElementById("video-play-btn");
-      const videoModal = document.getElementById("video-modal");
-      const closeBtn = document.getElementById("modal-close-btn");
-
-      if (playBtn && videoModal) {
-        playBtn.addEventListener("click", function () {
-          videoModal.classList.add("show");
-          document.body.style.overflow = "hidden"; // stop scroll
-        });
-
-        closeBtn.addEventListener("click", function () {
-          videoModal.classList.remove("show");
-          document.body.style.overflow = "";
-        });
-
-        videoModal.addEventListener("click", function (e) {
-          if (e.target === videoModal) {
-            videoModal.classList.remove("show");
-            document.body.style.overflow = "";
-          }
-        });
-      }
+ 
 
       // 5. Moveable Floating CTA Scroll Observer
       const moveableCta = document.getElementById("moveable-cta");
