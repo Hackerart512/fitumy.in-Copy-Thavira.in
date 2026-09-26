@@ -12,8 +12,8 @@
   <script src="https://fast.wistia.com/player.js" async></script>
   <script src="https://fast.wistia.com/embed/iet9ycnkvc.js" async type="module"></script>
 
-  <!-- Preload LCP image — eliminates render-blocking image discovery delay -->
-  <link rel="preload" href="images/Thavira_lp_banner.webp" as="image" fetchpriority="high" />
+  <!-- Preload the visible hero poster, which is a likely LCP image. -->
+  <link rel="preload" href="images/thumbnail_hero.webp" as="image" fetchpriority="high" />
 
   <!-- Main stylesheet (critical — kept blocking for layout stability) -->
   <link rel="stylesheet" href="style.css" />
@@ -21,21 +21,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preload" href="/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
-
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
 
   <!-- FontAwesome Icons — non-blocking (removes ~1,500 ms render block + 18 KB unused CSS) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <link
-    rel="preload"
-    href="/fonts/outfit.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  >
   <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
@@ -250,7 +241,7 @@
 
 
         <wistia-player media-id="iet9ycnkvc" autoplay style="margin-bottom: 23px;">
-          <img src="/images/thumbnail_hero.webp" alt="Video thumbnail" style="width:100%; height:100%; display:block;">
+          <img src="/images/thumbnail_hero.webp" alt="Video thumbnail" fetchpriority="high" decoding="async" style="width:100%; height:100%; display:block;">
         </wistia-player>
 
         <div class="hero-cta-wrapper">
@@ -670,7 +661,7 @@
         <!-- Video Card 1 — Vimeo facade: iframe injected only on click (~1,200 ms JS saved) -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci" frameborder="0"
+            <iframe src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci" loading="lazy" frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 1">
             </iframe>
           </div>
@@ -679,7 +670,7 @@
         <!-- Video Card 2 -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci" frameborder="0"
+            <iframe src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci" loading="lazy" frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 2">
             </iframe>
           </div>
@@ -688,7 +679,7 @@
         <!-- Video Card 3 -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://fast.wistia.com/embed/iframe/5ye7xc403x" title="Aditya Testimonial - H.pylori"
+            <iframe src="https://fast.wistia.com/embed/iframe/5ye7xc403x" title="Aditya Testimonial - H.pylori" loading="lazy"
               allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" scrolling="no" style="
                   width: 100%;
                   aspect-ratio: 9/16;
