@@ -8,61 +8,49 @@
   <meta name="description"
     content="Stop guessing why your gut issues keep coming back. Book a private 1:1 Gut Clarity Call for ₹199 and get a personalized 45-day next-step plan from an AYUSH-certified doctor." />
 
-  <!-- Hero section video -->
-  <script src="https://fast.wistia.com/player.js" async></script>
-  <script src="https://fast.wistia.com/embed/iet9ycnkvc.js" async type="module"></script>
+  <!-- Resource Preconnects for DNS & TLS optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://fast.wistia.com" />
+  <link rel="preconnect" href="https://connect.facebook.net" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-  <!-- Preload the visible hero poster, which is a likely LCP image. -->
-  <link rel="preload" href="images/thumbnail_hero.webp" as="image" fetchpriority="high" />
+  <!-- Preload Critical LCP Hero Image -->
+  <link rel="preload" href="images/thumbnail_hero.webp" as="image" type="image/webp" fetchpriority="high" />
 
-  <!-- Main stylesheet (critical — kept blocking for layout stability) -->
+  <!-- Main stylesheet (Critical) -->
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts - Asynchronous Non-Blocking -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+  </noscript>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+  <!-- FontAwesome Icons - Asynchronous Non-Blocking -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
 
-  <!-- FontAwesome Icons — non-blocking (removes ~1,500 ms render block + 18 KB unused CSS) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1072765442043336');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1072765442043336&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-PWNDMP7F");
-  </script>
-  <!-- End Google Tag Manager -->
-
+  <!-- Critical inline styles for Hero layout reservation & button styling -->
   <style>
+    /* Prevent layout shifts (CLS) for video player and header */
+    wistia-player {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background-color: #000000;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 23px;
+    }
+
     #diverVictoryBtn {
       display: inline-flex;
       align-items: center;
@@ -77,22 +65,12 @@
       font-size: 16px;
       font-weight: 700;
       line-height: 1.4;
-
-      /* Red button */
       background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
-
-      /* Gold border */
       border: 2px solid #d6a23a;
-
-      /* Glow */
-      box-shadow:
-        0 0 8px rgba(214, 162, 58, 0.5),
-        0 5px 18px rgba(0, 0, 0, 0.25);
-
+      box-shadow: 0 0 8px rgba(214, 162, 58, 0.5), 0 5px 18px rgba(0, 0, 0, 0.25);
       transition: all 0.3s ease;
     }
 
-    /* Hindi text */
     #diverVictoryBtn span {
       position: relative;
       z-index: 3;
@@ -100,50 +78,27 @@
       text-align: center;
     }
 
-    /* Animated gold border */
     #diverVictoryBtn::after {
       content: "";
       position: absolute;
-
       width: 180%;
       height: 180%;
-
       top: -40%;
       left: -40%;
-
-      background: conic-gradient(transparent,
-          transparent,
-          #fff2a8,
-          #d6a23a,
-          #fff2a8,
-          transparent,
-          transparent);
-
+      background: conic-gradient(transparent, transparent, #fff2a8, #d6a23a, #fff2a8, transparent, transparent);
       animation: goldBorder 3s linear infinite;
-
       z-index: 0;
     }
 
-    /* Inner red layer */
     #diverVictoryBtn::before {
       content: "";
       position: absolute;
-
       inset: 2px;
       border-radius: 48px;
-
       background: linear-gradient(135deg, #7d1515, #b52b20, #7d1515);
-
       z-index: 1;
     }
 
-    /* .wistia_embed {
-      margin-bottom: 23px;
-      width: 100%;
-      height: 400px;
-    } */
-
-    /* Border animation */
     @keyframes goldBorder {
       0% {
         transform: rotate(0deg);
@@ -154,39 +109,78 @@
       }
     }
 
-    /* Hover */
     #diverVictoryBtn:hover {
       transform: translateY(-3px) scale(1.04);
-
-      box-shadow:
-        0 0 10px rgba(214, 162, 58, 0.9),
-        0 0 25px rgba(214, 162, 58, 0.7),
-        0 8px 25px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(214, 162, 58, 0.9), 0 0 25px rgba(214, 162, 58, 0.7), 0 8px 25px rgba(0, 0, 0, 0.3);
     }
 
-    /* Hover background */
     #diverVictoryBtn:hover::before {
       background: linear-gradient(135deg, #a92323, #d08a25, #a92323);
     }
 
-    /* Click */
     #diverVictoryBtn:active {
       transform: scale(0.97);
     }
+  </style>
 
-    #diverVictoryBtn span {
-      position: relative;
-      z-index: 3;
-      width: 100%;
-      text-align: center;
+  <!-- Optimized Deferred Third-Party Tracking Scripts (Meta Pixel & GTM) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function initAnalytics() {
+      if (window.analyticsInitialized) return;
+      window.analyticsInitialized = true;
+
+      // Meta Pixel
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1072765442043336');
+      fbq('track', 'PageView');
+
+      // Google Tag Manager
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PWNDMP7F");
+
+      // Deferred load for Wistia Player JS
+      var s1 = document.createElement("script");
+      s1.src = "https://fast.wistia.com/player.js";
+      s1.async = true;
+      document.head.appendChild(s1);
+
+      var s2 = document.createElement("script");
+      s2.src = "https://fast.wistia.com/embed/iet9ycnkvc.js";
+      s2.async = true;
+      s2.type = "module";
+      document.head.appendChild(s2);
     }
 
-    /* @media (max-width: 768px) {
-      .wistia_embed {
-        height: 184px;
-      }
-    } */
-  </style>
+    // Trigger analytics & player scripts after page load or user interaction (prevents blocking initial paint)
+    var triggerEvents = ['touchstart', 'scroll', 'mousemove', 'keydown'];
+    function onUserInteraction() {
+      initAnalytics();
+      triggerEvents.forEach(function (e) { window.removeEventListener(e, onUserInteraction); });
+    }
+    triggerEvents.forEach(function (e) { window.addEventListener(e, onUserInteraction, { passive: true }); });
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function () { setTimeout(initAnalytics, 2500); });
+    } else {
+      setTimeout(initAnalytics, 2500);
+    }
+  </script>
 </head>
 
 <body>
@@ -210,7 +204,7 @@
     <div class="container nav-container">
       <div class="logo-area">
         <div class="logo-flex">
-          <img src="images/8.png" alt="Thavira" width="100" height="50" loading="eager" />
+          <img src="images/8.png" alt="Thavira" width="100" height="81" fetchpriority="high" decoding="async" />
         </div>
         <span class="nav-micro-label">Personalised 1:1 Gut Clarity Consultation</span>
       </div>
@@ -241,7 +235,8 @@
 
 
         <wistia-player media-id="iet9ycnkvc" autoplay style="margin-bottom: 23px;">
-          <img src="/images/thumbnail_hero.webp" alt="Video thumbnail" fetchpriority="high" decoding="async" style="width:100%; height:100%; display:block;">
+          <img src="images/thumbnail_hero.webp" alt="Video thumbnail" width="640" height="360" fetchpriority="high"
+            decoding="async" style="width:100%; height:100%; display:block; object-fit:cover;">
         </wistia-player>
 
         <div class="hero-cta-wrapper">
@@ -473,8 +468,8 @@
           <!-- Step 1 -->
           <div class="chain-card light-card step-1">
             <div class="chain-card-img-wrap">
-              <img src="images/step1_stress_pylori.avif" alt="H. Pylori or Chronic Stress initial trigger"
-                loading="lazy" />
+              <img src="images/step1_stress_pylori.avif" alt="H. Pylori or Chronic Stress initial trigger" width="1200"
+                height="896" loading="lazy" decoding="async" />
               <span class="stage-pill-light pill-red">STEP 01</span>
             </div>
             <div class="chain-card-content">
@@ -502,7 +497,8 @@
           <!-- Step 2 -->
           <div class="chain-card light-card step-2">
             <div class="chain-card-img-wrap">
-              <img src="images/step2_acid_imbalance.avif" alt="Imbalanced stomach acid level" loading="lazy" />
+              <img src="images/step2_acid_imbalance.avif" alt="Imbalanced stomach acid level" width="1200" height="896"
+                loading="lazy" decoding="async" />
               <span class="stage-pill-light pill-amber">STEP 02</span>
             </div>
             <div class="chain-card-content">
@@ -528,7 +524,8 @@
           <!-- Step 3 -->
           <div class="chain-card light-card step-3">
             <div class="chain-card-img-wrap">
-              <img src="images/step3_sibo_dysbiosis.avif" alt="SIBO and Dysbiosis bacterial overgrowth" loading="lazy" />
+              <img src="images/step3_sibo_dysbiosis.avif" alt="SIBO and Dysbiosis bacterial overgrowth" width="1200"
+                height="896" loading="lazy" decoding="async" />
               <span class="stage-pill-light pill-orange">STEP 03</span>
             </div>
             <div class="chain-card-content">
@@ -554,7 +551,8 @@
           <!-- Step 4 -->
           <div class="chain-card light-card step-4">
             <div class="chain-card-img-wrap">
-              <img src="images/step4_leaky_gut.avif" alt="Leaky gut lining damaged barrier" loading="lazy" />
+              <img src="images/step4_leaky_gut.avif" alt="Leaky gut lining damaged barrier" width="1200" height="896"
+                loading="lazy" decoding="async" />
               <span class="stage-pill-light pill-rose">STEP 04</span>
             </div>
             <div class="chain-card-content">
@@ -580,8 +578,8 @@
           <!-- Step 5 -->
           <div class="chain-card light-card step-5">
             <div class="chain-card-img-wrap">
-              <img src="images/step5_gut_brain_anxiety.avif" alt="Severe gut issues and anxiety symptoms"
-                loading="lazy" />
+              <img src="images/step5_gut_brain_anxiety.avif" alt="Severe gut issues and anxiety symptoms" width="1200"
+                height="896" loading="lazy" decoding="async" />
               <span class="stage-pill-light pill-green">STEP 05</span>
             </div>
             <div class="chain-card-content">
@@ -658,11 +656,11 @@
       </div>
 
       <div class="testimonial-slider">
-        <!-- Video Card 1 — Vimeo facade: iframe injected only on click (~1,200 ms JS saved) -->
+        <!-- Video Card 1 — Deferred iframe load on scroll -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci" loading="lazy" frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 1">
+            <iframe data-src="https://player.vimeo.com/video/1226161746?share=copy&fl=sv&fe=ci" loading="lazy"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 1">
             </iframe>
           </div>
         </div>
@@ -670,8 +668,8 @@
         <!-- Video Card 2 -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci" loading="lazy" frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 2">
+            <iframe data-src="https://player.vimeo.com/video/1226161745?share=copy&fl=sv&fe=ci" loading="lazy"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Testimonial 2">
             </iframe>
           </div>
         </div>
@@ -679,8 +677,9 @@
         <!-- Video Card 3 -->
         <div class="video-card">
           <div class="vimeo-wrapper">
-            <iframe src="https://fast.wistia.com/embed/iframe/5ye7xc403x" title="Aditya Testimonial - H.pylori" loading="lazy"
-              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" scrolling="no" style="
+            <iframe data-src="https://fast.wistia.com/embed/iframe/5ye7xc403x" title="Aditya Testimonial - H.pylori"
+              loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"
+              scrolling="no" style="
                   width: 100%;
                   aspect-ratio: 9/16;
                   border: 0;
@@ -910,7 +909,8 @@
           <div class="journey-card">
             <div class="image-wrap">
               <img src="images/method-1.jfif"
-                alt="Step 1: Symptom mapping – charting your digestive patterns with a Thavira doctor" loading="lazy" />
+                alt="Step 1: Symptom mapping – charting your digestive patterns with a Thavira doctor" width="800"
+                height="533" loading="lazy" decoding="async" />
               <div class="step-pill">STEP 01</div>
             </div>
 
@@ -932,8 +932,8 @@
           <div class="journey-card elevated">
             <div class="image-wrap">
               <img src="images/method-2.jfif"
-                alt="Step 2: Root-cause teardown – reviewing patient history, reports and failed treatments"
-                loading="lazy" />
+                alt="Step 2: Root-cause teardown – reviewing patient history, reports and failed treatments" width="800"
+                height="533" loading="lazy" decoding="async" />
               <div class="step-pill">STEP 02</div>
             </div>
 
@@ -955,8 +955,8 @@
           <div class="journey-card success">
             <div class="image-wrap">
               <img src="images/method-3.jfif"
-                alt="Step 3: Recovery protocol – personalized gut recovery course and supplements playbook"
-                loading="lazy" />
+                alt="Step 3: Recovery protocol – personalized gut recovery course and supplements playbook" width="800"
+                height="533" loading="lazy" decoding="async" />
               <div class="step-pill green">STEP 03</div>
             </div>
 
@@ -1174,7 +1174,8 @@
       <div class="team-carousel-container">
         <div class="team-carousel">
           <div class="team-card">
-            <img src="images/sinchana.webp" alt="Dr. Sinchana – Medical Director at Thavira Health" loading="lazy" />
+            <img src="images/sinchana.webp" alt="Dr. Sinchana – Medical Director at Thavira Health" width="1080"
+              height="1080" loading="lazy" decoding="async" />
             <div class="card-overlay">
               <div class="pill">A.Y.U.S.H Certified</div>
               <h3>Dr. Sinchana</h3>
@@ -1183,7 +1184,8 @@
           </div>
 
           <div class="team-card">
-            <img src="images/yash.webp" alt="Dr. Yash – Medical Director at Thavira Health" loading="lazy" />
+            <img src="images/yash.webp" alt="Dr. Yash – Medical Director at Thavira Health" width="1080" height="1080"
+              loading="lazy" decoding="async" />
             <div class="card-overlay">
               <div class="pill">A.Y.U.S.H Certified</div>
               <h3>Dr. Yash</h3>
@@ -1192,7 +1194,8 @@
           </div>
 
           <div class="team-card">
-            <img src="images/rayan.webp" alt="Dr. Rayan – Founder and Doctor at Thavira Health" loading="lazy" />
+            <img src="images/rayan.webp" alt="Dr. Rayan – Founder and Doctor at Thavira Health" width="1080"
+              height="1080" loading="lazy" decoding="async" />
             <div class="card-overlay">
               <div class="pill">A.Y.U.S.H Certified</div>
               <h3>Dr. Rayan</h3>
@@ -1575,7 +1578,7 @@
           }
         });
       });
- 
+
 
       // 5. Moveable Floating CTA Scroll Observer
       const moveableCta = document.getElementById("moveable-cta");
@@ -1591,6 +1594,24 @@
           passive: true,
         });
         checkCtaVisibility();
+      }
+
+      // 6. Testimonial Video Iframe Lazy Load Observer
+      const testimonialSection = document.querySelector('.section-testimonials');
+      if (testimonialSection && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              const iframes = entry.target.querySelectorAll('iframe[data-src]');
+              iframes.forEach(function (iframe) {
+                iframe.src = iframe.getAttribute('data-src');
+                iframe.removeAttribute('data-src');
+              });
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '300px' });
+        observer.observe(testimonialSection);
       }
     });
   </script>
